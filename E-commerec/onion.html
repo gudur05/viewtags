@@ -1,17 +1,30 @@
 <html>
 <head>
 <style>
-
-h1 {
-  text-transform:uppercase;
-  background-color: #F1F1F1;
-  text-align:center;
-  padding:20px;
-  border-style : solid;
-  border-width: 2px;
+.maincontainer{
+background:green;
+height: 40px;
+margin:10px;
+}
+#left {
+  float: left;
+  color: #fff;
   
 }
 
+#right {
+  float: right;
+  color: #fff;
+}
+
+#center {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #fff;
+  text-align: center;
+  text-transform:uppercase;
+  font-size:30;
+}
 select{
      width:80px;
      margin:10px;
@@ -30,13 +43,11 @@ select{
   text-decoration:none;
   
 }
-.ul{
+.list{
 list-style:none;
 text-align:center;
 
 }
-
-
 
 .bag1, .bag2, .bag3, .bag4 {
    border-width:2px;
@@ -46,14 +57,19 @@ text-align:center;
    width:50vh;
    border-style:solid;
    border-radius:1px;
-   border-color:black;
+   border-color:#f1f1f1;
    
 }
+
+
 
 </style>
 </head>
 <body>
-<div class = "h1"> <h1> Basket </h1> 
+<div class="maincontainer">
+    <div id="left"> <img src="base.png" width="80" height="40" /></div>
+    <div id="right"> <img src="cart.jpg" width="50" height="40" /></div>
+    <div id="center"> basket </div>
 </div>
 <div class ="nav a">
 <div class = "ul">

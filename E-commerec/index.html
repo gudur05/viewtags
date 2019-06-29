@@ -2,15 +2,30 @@
 <head>
 <style>
 
-h1 {
-  text-transform:uppercase;
-  background-color: #F1F1F1;
-  text-align:center;
-  padding:20px;
-  border-style : solid;
-  border-width: 2px;
+.maincontainer{
+background:green;
+height: 40px;
+margin:10px;
+}
+#left {
+  float: left;
+  color: #fff;
+  
 }
 
+#right {
+  float: right;
+  color: #fff;
+}
+
+#center {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #fff;
+  text-align: center;
+  text-transform:uppercase;
+  font-size:30;
+}
 select{
      width:80px;
      margin:10px;
@@ -29,7 +44,7 @@ select{
   text-decoration:none;
   
 }
-.ul{
+.list{
 list-style:none;
 text-align:center;
 
@@ -43,7 +58,7 @@ text-align:center;
    width:50vh;
    border-style:solid;
    border-radius:1px;
-   border-color:black;
+   border-color:#f1f1f1
    
 }
 
@@ -52,11 +67,13 @@ text-align:center;
 </style>
 </head>
 <body>
-<div class = "h1">
-<h1> Basket </h1> 
+<div class="maincontainer">
+    <div id="left"> <img src="base.png" width="80" height="40" /></div>
+    <div id="right"> <img src="cart.jpg" width="50" height="40" /></div>
+    <div id="center"> basket </div>
 </div>
 <div class ="nav a">
-<div class = "ul">
+<div class = "list">
 <ul>
 
 <a href = "index.html">Vegetables </a>
@@ -65,7 +82,8 @@ text-align:center;
 <a href = "palak.html" > Pluses </a>
 <a href = "potato.html" > Others </a>
 </ul>
-</div></div>
+</div>
+</div>
 
 <div class ="bag1">
 <img src="potato.jpg" alt = "potato image" width ="150" height ="200" >
