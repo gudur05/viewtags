@@ -1,0 +1,157 @@
+<html>
+<head>
+<style>
+.form-container {
+width: 70%;
+border: 1px solid aliceblue;
+padding: 40px;
+color:white;
+background:#78d3b5;
+margin-left: 200px;
+margin-top: 20px;
+opacity:0.9;
+font-family:times;
+}
+.header {
+text-align: center;
+font-size: 40px;
+margin-top: 30px;
+color:blue;
+font-family:times;
+
+}
+input[type=text] {
+margin-left:25px;
+margin-bottom:30px;
+width:150px;
+margin-right:100px;
+font-family:times;
+}
+
+input[type=email] {
+margin-left:-7px;
+width:150px;
+margin-bottom:30px;
+font-family:times;
+}
+
+input[type=number] {
+margin-left:-5px;
+width:150px;
+margin-bottom:30px;
+margin-right:100px;
+font-family:times;
+
+}
+
+input[type=textarea] {
+margin-left:-20px;
+width:500px;
+margin-bottom:30px;
+font-family:times;
+}
+label {
+margin-right:20px;
+padding-right:10px;
+font-family:times;
+}
+option {
+width:150px;
+font-family:times;
+}
+
+input[type=button]{
+border: 1px solid blue;
+    border-radius: 2px;
+    background: blue;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 100px;
+	font-family:times;
+	}
+input[type=submit] {
+border: 1px solid orange;
+border-radius: 2px;
+background: orange;
+color: white;
+padding-left: 45px;
+padding-right: 45px;
+padding-top: 8px;
+padding-bottom: 8px;
+margin-left: 9px;
+font-family:times;
+}
+body {
+background-image: url("pro1.jpg");
+background-size: 100%;
+}
+select {
+font-family:times;
+}
+</style>
+</head>
+<body>
+
+<div class ="header">
+<div> PRODUCT ORDER FORM </div>
+</div>
+<div class ="form-container">
+<div>
+<label> FIRST NAME </label>
+<input type = "text" placeholder ="Your First Name" />
+
+<label> LAST NAME </label>
+<input type = "text" placeholder ="Your First Name" />
+</div>
+
+<div> 
+<label> EMAIL ADDRESS </label>
+<input type ="email" placeholder ="mail@example.com" />
+</div>
+
+<div> 
+<label> PHONE NUMBER </label>
+
+<input type ="number" placeholder ="??????????" />
+</div>
+
+<div> 
+<label> BILLING ADDRESS </label>
+<input type ="textarea" placeholder ="billing address" />
+</div>
+
+<div> 
+<label> ADDRESS </label>
+<input type ="textarea" placeholder ="Your Address" />
+</div>
+
+<div>
+<label> CITY </label>
+<input type ="text" placeholder ="Your City" />
+
+<label> STATE/PROVINCE </label>
+<input type ="text" placeholder ="Your City" />
+</div>
+
+<div>
+<label> ZIP CODE </label>
+<input type ="number" placeholder ="Zip Code" />
+
+<label> COUNTRY </label>
+<select name = "Country" >
+<option value = ""  /> Country
+<option value = "India"  /> India
+<option value = "USA" /> USA 
+<option value = "UK" /> UK 
+</select>
+</div>
+
+<label>
+<input type ="button" value ="PLACE ORDER" />
+<input type ="submit" value ="RESET" />
+</label>
+</body>
+</html>

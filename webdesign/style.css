@@ -1,0 +1,144 @@
+body{
+	margin:0px;
+	}
+.header {
+overflow: hidden;
+background-color:#b3d9ff;
+}
+.header ul li {
+display:inline-block;
+padding: 7px;
+margin-left: 85px;
+text-transform:uppercase;
+}
+.header ul li a {
+	text-decoration:none;
+	color:blue;
+	font-size:15px;
+}
+.top-content{
+	background:#3399ff;
+}
+.top-content h1 {
+color:white;
+font-size:50px;
+padding-left:30px;
+padding-top: 10px;
+margin-top: 0px;
+}
+.top-content div{
+color:white;
+font-size:40px;
+padding-left:30px;
+margin-top: -30px;
+}
+.top-content pre {
+	color:white;
+	padding-left:30px;
+	padding-bottom:20px;
+	font-family:times;
+}
+input[type=submit]{
+	border:1px solid #66b3ff;
+	border-radius:6px;
+	background:#66b3ff;
+	color:white;
+    padding-left: 30px;
+    padding-right: 30px;
+	padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 30px;    
+	
+}
+	.mid {
+    border-top: 2px solid #f1f1f1;
+	border-bottom: 2px solid #f1f1f1;
+	box-shadow:5px 10px 15px #888888;
+    width: 90%;
+    margin-left: 70px;
+    margin-right: 204px;
+	margin-top: 25px;
+	}
+	.mid h1 {
+		text-align:center;
+	}
+	.mid pre{
+       padding-left: 130px;
+	   font-family: times;
+	   font-size: 16px;
+	   color: #b3b3b3;
+}
+
+.left{
+	float:left;
+	width:20;
+	margin-top:3px;
+}
+.center {
+	float:left';
+	width:60%
+}
+.center ul li {
+	text-align:center;
+}
+.center pre {
+	text-align:center;
+	color: #b3b3b3;
+}
+.center h2{
+	text-align:center;
+}
+.right{
+	float:right;
+	width:20%
+	}
+.right h2 {
+	margin-top:-220px;
+}
+.right-content{
+padding-right:20px;
+}	
+.bottom{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	border-top:1px solid #f1f1f1;
+	margin-top:70px;
+	margin-left:45px;
+	padding-top:2px;
+	box-shadow: 0 -5px 5px -5px #333;
+}
+.bottom pre {
+	color:#b3b3b3;
+}
+.footer {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width:100%;
+	background:#3399ff;
+	margin-top:50px;
+	color:white;
+	padding-bottom: 80px;
+   
+}
+.footer pre {
+	font-family:times;
+	margin-left:20px;
+}
+.footer h1 {
+	margin-left:20px;
+}
+
+.footer1 {
+	
+	width:96.9%;
+	background:#b3d9ff;
+	text-align:center;
+	padding:20px;
+	
+}
+.body-container {
+	margin-left:40px;
+	margin-right:40px;
+}
