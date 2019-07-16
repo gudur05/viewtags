@@ -26,6 +26,10 @@ margin:10px;
   text-transform:uppercase;
   font-size:30;
 }
+ .head-container {
+ overflow:hidden;
+ background-color:lightgreen;
+}
 select{
      width:80px;
      margin:10px;
@@ -62,7 +66,19 @@ text-align:center;
    
 }
 
-
+.bottom-container {
+position: fixed;
+bottom:0;
+right: 0;
+left:0;
+background:green;
+height: 40px;
+width:100%;
+margin-top:100px;
+text-align:center;
+color:white;
+font-size:30px;
+}
 
 </style>
 </head>
@@ -80,7 +96,7 @@ text-align:center;
 <a href = "tomato.html"> Rice </a>
 <a href = "onion.html" > Millets </a>
 <a href = "palak.html" > Pluses </a>
-<a href = "potato.html" > Others </a>
+<a href = "potato.html" > Cart </a>
 </ul>
 </div></div>
 <div class = "bag4">
@@ -103,6 +119,8 @@ text-align:center;
 <input type = "button" value = "Add to Cart" />
 </div>
 </div>
-
+<div class ="bottom-container">
+  <div> BASKET </div>
+  </div>
 </body>
 </html>
