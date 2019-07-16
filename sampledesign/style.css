@@ -1,0 +1,421 @@
+
+.maincontainer{
+   padding:0px;
+   margin:0px;
+   width:100%;
+        }                 
+		
+.head-container{
+     display: flex;
+     justify-content: space-between;
+     background: blue;
+     padding: 5px;
+       }
+	   .head-container div {
+		   color:white;
+		   font-size:30px;
+	   }
+.head-container a {
+text-decoration:none;
+color:white;
+
+	   }
+body{
+ margin:0px;
+    }
+.body-container {
+		width:100%;
+		padding:0px;
+		}
+.left-container{
+		width:18%;
+		float:left;
+		
+		}
+.mid-container {
+    width: 60%;
+    float:left;
+    height: 600px;
+	border-left:1px solid;
+	border-right:1px solid;
+	}
+
+.img-container {
+	margin-left:110px;
+	margin-top:100px;
+}
+
+.right-container {
+	width:18%;
+	float:right;
+	}
+.left-container ul {
+	list-style:none;
+	padding:10px;
+	}
+	
+.left-container ul a {
+	text-decoration:none;
+	padding:10px;
+	color:white;
+	
+	}
+	
+.left-container ul li {
+border: 2px solid blue;
+background: blue;
+border-radius: 3px;
+padding: 4px;
+margin: 23px;
+width: 110px;
+text-align:center;
+	}
+.bottom-container {
+	width:100%;
+	position:fixed;
+	bottom:0;
+	background:blue;
+	text-align:center;
+	padding:10px;
+	color:white;
+	}
+.card1, .card2 {
+    border: 3px solid #cacaca;
+    width: 45%;
+    height: 380px;
+    border-radius: 8px;
+    padding: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.card-container, .card1, .card2, ul{
+list-style:circle;
+padding:15px;
+}
+.card-container, .card1, .card2, li {
+padding:10px;
+}
+ h1 {
+color:blue;
+padding:0px;
+margin:0px;
+}
+.card-container img {
+    width: 100%;
+    height: 35px;
+    float: right;
+    max-width: 80px;
+}
+.form {
+border: 1px solid blue;
+border-radius:10px;
+width: 40%;
+margin:10px;
+padding: 10px;
+background:aliceblue;
+background-size:50%;
+}
+.form div {
+	padding:3px;
+
+}
+input[type=submit]
+{
+border: 1px solid;
+border-radius: 5px;
+background: green;
+color: white;
+font-family: times;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: 13px;
+margin-top: 10px;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+.contact {
+border:1px solid;
+width:750px;
+height:400px;
+}
+.contact {
+border: 5px solid blue;
+width: 400px;
+height: 300px;
+margin-left: 100px;
+padding-left: 15px;
+margin-top: 60px;
+border-radius: 20px;
+}
+.add, .email, .phone {
+color:red;
+text-transform:uppercase;
+margin-top:25px;
+margin-bottom:10px;
+
+}
+.info {
+color: blue;
+margin-top: 10px;
+text-align: center;
+font-size: 40px;
+}
+/*Responsive design*/
+
+@media only screen and (min-width: 325px)  and  (max-width: 480px){
+	.left-container {
+    width: 100%;
+}
+.left-container ul li {
+    padding: 3px;
+    margin: 0 auto;
+    width: 20%;
+    display: inline-block;
+    font-size: 10px;
+	border: green;
+background: green;
+}
+.mid-container {
+
+    width: 96%;
+    height: auto;
+    border: 1px solid;
+    margin: 0 auto;
+
+}
+.info {
+
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+
+}
+.contact {
+
+    border: 5px solid blue;
+    width: 90%;
+    height: 300px;
+    margin-top: 2px;
+    margin: 0 auto;
+
+}
+.right-container {
+
+    margin: 0 auto;
+    float: none;
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+.right-container img {
+
+    width: 100%;
+    height: auto;
+	max-height: 230px;
+    margin: 0 auto;
+
+}
+.bottom-container {
+
+    width: 100%;
+}
+.card-container, .card1, .card2, ul  {
+    padding: 5px;
+    width: 95%;
+    margin: 0 auto;
+}
+.card1 {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+.card-container img {
+    width: 100%;
+    height: 35px;
+    float: right;
+    max-width: 80px;
+}
+.card-container, .card1, .card2, li {
+    padding: 5px;
+}
+
+.body-container {
+
+    width: 97%;
+    margin: 0 auto;
+
+}
+
+}
+@media only screen and (min-width: 481px)  and  (max-width: 768px){
+	.left-container {
+    width: 100%;
+}
+.left-container ul {
+    padding: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+.left-container ul li {
+	padding: 8px;
+    margin: 0 auto;
+    width: 20%;
+    display: inline-block;
+    font-size: 10px;
+	border: green;
+    background: green;
+}
+.mid-container {
+
+    width: 99%;
+    height: auto;
+    border: 1px solid;
+    margin: 0 auto;
+
+}
+.info {
+
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+
+}
+.contact {
+
+    border: 5px solid blue;
+    width: 90%;
+    height: 300px;
+    margin-top: 2px;
+    margin: 0 auto;
+
+}
+.right-container {
+
+    width: 30%;
+    margin: 0 auto;
+    float: none;
+
+}
+.right-container img {
+
+    width: 100%;
+    height: auto;
+	max-height: 230px;
+    margin: 0 auto;
+
+}
+.bottom-container {
+
+    width: 100%;
+}
+.card-container, .card1, .card2, ul  {
+    padding: 5px;
+    width: 95%;
+    margin: 0 auto;
+}
+.card1 {
+    width: 95%;
+    margin: 0 auto;
+	margin-bottom: 10px;
+}
+.card-container img {
+    width: 100%;
+    height: 35px;
+    float: right;
+    max-width: 80px;
+}
+.card-container, .card1, .card2, li {
+    padding: 5px;
+}
+
+.body-container {
+
+    width: 97%;
+    margin: 0 auto;
+
+}
+}
+@media only screen and (min-width: 769px)  and  (max-width: 1024px){
+	.left-container {
+    width: 100%;
+}
+.left-container ul li {
+    padding: 3px;
+    margin: 0 auto;
+    width: 20%;
+    display: inline-block;
+    font-size: 10px;
+	border: green;
+background: green;
+}
+.mid-container {
+
+    width: 96%;
+    height: auto;
+    border: 1px solid;
+    margin: 0 auto;
+
+}
+.info {
+
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+
+}
+.contact {
+
+    border: 5px solid blue;
+    width: 90%;
+    height: 300px;
+    margin-top: 2px;
+    margin: 0 auto;
+
+}
+
+.right-container {
+
+    width: 30%;
+    margin: 0 auto;
+    float: none;
+
+}
+.right-container img {
+
+    width: 100%;
+    height: auto;
+	max-height: 230px;
+    margin: 0 auto;
+
+}
+.bottom-container {
+
+    width: 100%;
+}
+.card-container, .card1, .card2, ul  {
+    padding: 5px;
+    width: 95%;
+    margin: 0 auto;
+}
+.card1 {
+    width: 95%;
+    margin: 0 auto;
+	margin-bottom: 10px;
+}
+.card-container img {
+    width: 100%;
+    height: 35px;
+    float: right;
+    max-width: 80px;
+}
+.card-container, .card1, .card2, li {
+    padding: 5px;
+}
+
+.body-container {
+
+    width: 97%;
+    margin: 0 auto;
+
+}
+}
