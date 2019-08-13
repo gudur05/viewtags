@@ -8,24 +8,24 @@
      </style>
     </head>
     <body>
-        <div class ="container">
+    <div class ="container">
 		<button class ="btn btn-primary mt-5" onclick ='myFunction()'> Click Here </button>
 		<div class ="card-body inactive" id ="content">
-		<p>Front-end technologies. Front-end is a term that involves the building of webpages and user interfaces for web-applications. ... The core 3 technologies that all modern front-end web developers work to master are HTML5, CSS, and JavaScript. </p>
-          </div>
-            
+		    <p>Front-end technologies. Front-end is a term that involves the building of webpages and user interfaces for web-applications. ... The core 3 technologies that all modern front-end web developers work to master are HTML5, CSS, and JavaScript. </p>
         </div>
+            
+    </div>
         <script>
          function myFunction(){
-			 if($('#content').hasClass("inactive")){
+			 if($('#content').hasClass("inactive"))
 			 $('#content').removeClass("inactive");
-			 }
 			 
-			else {
+			 
+			else 
 			$('#content').addClass("inactive");
 			}
                  			
-          }
+          
 		  
 		  
         </script>

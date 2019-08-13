@@ -1,0 +1,891 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+    .left-content{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .header-content{
+        color:gainsboro;
+    }
+     a:hover   {
+     background:#999;
+}
+.left-container {
+    margin-bottom: -5px;
+    font-size: 14px;
+}
+.left-mid1 a{
+  margin-left:42px !important;
+}
+.col-md-12.mid-header {
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid #ccc; 
+}
+.col-md-3.info-cards {
+
+background: #fff;
+max-width: 22%;
+margin: 0 14px;
+
+}
+.col-md-9.mid-content {
+    background: #eee;
+ 
+    }
+.img-icon {
+    vertical-align: top;
+}
+.left-side{
+    /* margin-left:20px; */
+    width: 320px;
+    /* border-bottom: 1px solid #cacaca; */
+    /* font-size:5px; */
+}
+.card-height0 {
+    height: 486px;
+}
+button .fa.fa-sliders.text-white {
+    float: left;
+}
+button .fa.fa-caret-down {
+
+    float: right;
+
+}
+.right-header{
+    margin-top: 25px;
+    text-align: right;
+}
+.right-img{
+    border-radius:30px;
+}
+.mid-text{
+margin-top:-30px;
+}
+
+.list1{
+border-bottom:1px solid #cacaca;
+}
+.list2{
+    border:1px solid #cacaca;
+}
+.list1 img{
+    border-radius:20px;
+    margin-top:5px;
+}
+.card-body{
+    font-size: 15px;
+}
+.down {
+    bottom: 0;
+    width: 25%;
+    position: fixed;
+    margin:0px;
+    padding:0px; 
+    height:70px;   
+}
+.card3 p{
+    font-size:13px;
+}
+.card-height{
+    height:612px;
+}
+.border-table td, .border-table th{
+    border-top: 0px !important;
+    font-size: 14px;
+}
+.card-height1{
+    height:480px;
+}
+.mid-footer{
+    height:40px;
+    padding-top:10px;
+}
+.cal-table td, .cal-table th{
+    padding:8px !important;
+    border-top:0px !important;
+    border-bottom: 0px !important;
+    color:#454545;
+}
+.cal-table{
+    margin-top:150px;
+}
+.dropdown-card{
+  width:300px;
+}
+.mid-dropdown{
+  padding:0px !important;
+}
+</style>
+    </head>
+    <body>
+      
+        <div class="container-fluid ">
+             <div class ="row h-100">
+              <!-- <**left-content-start**> -->
+               <div class ="col-md-3 left-content bg-dark">
+                    <h4 class="text-white  mt-3 text-center">AppStack</h4>
+                    <small class ="header-content">Main</small>
+               <nav class="navbar  navbar-dark">
+                    <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="true">
+                     <span class="fa fa-sliders text-white"> </span>
+                     <a class="navbar-brand left-container " href="#">Dashboard</a>
+                     <span class="fa fa-caret-down"></span>
+                    </button>
+                    <div class="navbar-collapse collapse hide" id="collapsibleNavbar" style>
+                      <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0)">Default</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0)">Analytics</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0)">E-commerce</a>
+                        </li>   
+                        <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Social</a>
+                         </li>
+                         <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Crypto</a>
+                         </li> 
+                      </ul>
+                    </div>  
+                </nav>
+                <nav class="navbar  navbar-dark">
+                        <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1" aria-expanded="true">
+                                <span class="fa fa-sliders text-white"> </span>
+                                <a class="navbar-brand left-container" href="#">Pages</a>
+                                <span class="fa fa-caret-down"></span>
+                        </button>
+                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar1" style>
+                          <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                              <a class="nav-link" href="javascript:void(0)">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="javascript:void(0)">Settings</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="javascript:void(0)">Clients</a>
+                              
+                            </li>   
+                            <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)">Invoice</a>
+                             </li>
+                             <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)">Pricing</a>
+                             </li> 
+                             <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)">Kanban Board</a>
+                             </li> 
+                             <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)">Blank Page</a>
+                             </li> 
+                          </ul>
+                        </div>  
+                    </nav>
+                    <nav class="navbar  navbar-dark">
+                            <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar0" aria-expanded="true">
+                                <div class ="d-flex justify-content-between left-mid1 ">
+                                   <span class="fa fa-sliders text-white"> </span>
+                                    <a class="navbar-brand left-container " href="#">Auth</a>
+                                    <span class="badge badge-primary badge-pill">12/24</span></div>
+                            </button>
+                    </nav>
+                    <nav class="navbar  navbar-dark">
+                            <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2" aria-expanded="true">
+                                    <span class="fa fa-sliders text-white"> </span>
+                                    <a class="navbar-brand left-container" href="#">Layouts</a>
+                                    <span class="fa fa-caret-down"></span>
+                             </button>
+                            <div class="navbar-collapse collapse hide" id="collapsibleNavbar2" style>
+                              <ul class="navbar-nav text-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="javascript:void(0)">Sticky Sidebar</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="javascript:void(0)">Sidebar Collapsed</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="javascript:void(0)">Boxed Layout</a>
+                                  
+                                </li>   
+                                <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Classic Theme</a>
+                                 </li>
+                                 <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Corporate Theme</a>
+                                 </li> 
+                                 <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Modern Theme</a>
+                                 </li> 
+                                 
+                              </ul>
+                            </div>  
+                        </nav>
+                        <nav class="navbar  navbar-dark">
+                                <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar9" aria-expanded="true">
+                                        <span class="fa fa-sliders text-white"> </span>
+                                        <a class="navbar-brand left-container" href="#">Documentation</a>
+                                </button>
+                        </nav>
+                        <small class ="header-content">Components</small>
+                        <nav class="navbar  navbar-dark">
+                                <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar3" aria-expanded="true">
+                                        <span class="fa fa-sliders text-white"> </span>
+                                        <a class="navbar-brand left-container" href="#">UI Elements</a>
+                                        <span class="fa fa-caret-down"></span>
+                                </button>
+                                <div class="navbar-collapse collapse hide" id="collapsibleNavbar3" style>
+                                  <ul class="navbar-nav text-center">
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="javascript:void(0)">Alerts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="javascript:void(0)">Buttons</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="javascript:void(0)">Cards</a>
+                                    </li>   
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">General</a>
+                                     </li>
+                                     <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">Grid</a>
+                                     </li> 
+                                     <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">Modals</a>
+                                     </li> 
+                                     <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">Notifications</a>
+                                     </li> 
+                                     <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">Tabs</a>
+                                     </li> 
+                                     <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">Typography</a>
+                                     </li> 
+                                     
+                                  </ul>
+                                </div>  
+                            </nav>
+                            <nav class="navbar  navbar-dark">
+                                    <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar8" aria-expanded="true">
+                                        <div class ="d-flex justify-content-between left-mid1 ">
+                                            <span class="fa fa-sliders text-white"> </span>
+                                            <a class="navbar-brand left-container" href="#">Chart</a>
+                                            <span class="badge badge-primary badge-pill">New</span>
+                                          </div>
+                                    </button>
+                            </nav>
+                            <nav class="navbar  navbar-dark">
+                                    <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar4" aria-expanded="true">
+                                            <span class="fa fa-sliders text-white"> </span>
+                                            <a class="navbar-brand left-container" href="#">Forms</a>
+                                            <span class="fa fa-caret-down"></span>
+                                    </button>
+                                    <div class="navbar-collapse collapse hide" id="collapsibleNavbar4" style>
+                                      <ul class="navbar-nav text-center">
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="javascript:void(0)">Layouts</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="javascript:void(0)">Basic Elements</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="javascript:void(0)">Advanced Elements</a>
+                                        </li>   
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="javascript:void(0)">Input Groups</a>
+                                         </li>
+                                         <li class="nav-item">
+                                                <a class="nav-link" href="javascript:void(0)">Editors</a>
+                                         </li> 
+                                         <li class="nav-item">
+                                                <a class="nav-link" href="javascript:void(0)">Validations</a>
+                                         </li> 
+                                         <li class="nav-item">
+                                                <a class="nav-link" href="javascript:void(0)">Wizard</a>
+                                         </li>
+                                    </ul>
+                                    </div>  
+                                </nav>
+                                <nav class="navbar  navbar-dark">
+                                        <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar5" aria-expanded="true">
+                                                <span class="fa fa-sliders text-white"> </span>
+                                                <a class="navbar-brand left-container" href="#">Tables</a>
+                                                <span class="fa fa-caret-down"></span>
+                                        </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar5" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="javascript:void(0)">Bootstrap</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="javascript:void(0)">Advanced</a>
+                                            </li>
+
+                                             
+                                          </ul>
+                                        </div> 
+                                 </nav>    
+                                 <nav class="navbar  navbar-dark">
+                                        <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar7" aria-expanded="true">
+                                            <div class ="d-flex justify-content-between left-mid1 ">
+                                                <span class="fa fa-sliders text-white"> </span>
+                                                <a class="navbar-brand left-container" href="#">Icons</a>
+                                                <span class="badge badge-primary badge-pill">Special</span>
+                                              </div>
+                                        </button>
+                                </nav>
+                                <nav class="navbar  navbar-dark">
+                                        <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar7" aria-expanded="true">
+                                            <div class ="d-flex justify-content-between left-mid1 ">
+                                                <span class="fa fa-sliders text-white"> </span>
+                                                <a class="navbar-brand left-container" href="#">Calendar</a>
+                                                <span class="badge badge-primary badge-pill">New</span>
+                                              </div>
+                                        </button>
+                                </nav>
+         
+                                <nav class="navbar  navbar-dark">
+                                        <button class="navbar-toggler w-100 border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar6" aria-expanded="true">
+                                                <span class="fa fa-sliders text-white"> </span>
+                                                <a class="navbar-brand left-container" href="#">Maps</a>
+                                                <span class="fa fa-caret-down"></span>
+                                        </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar6" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="javascript:void(0)">Google Maps</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="javascript:void(0)">Vector Maps</a>
+                                            </li>
+                                         </ul>
+                                        </div> 
+                                 </nav>  
+                             <footer class="down bg-dark"> 
+                                    <img src ="div.jpg" width="40" height ="40" class ="mt-3 ml-3 right-img float-left"/> 
+                                    <h6 class ="text-white float-left mt-4 ml-3">Divya Gudur
+                                        <pre><p class ="text-white ml-3"><span class="badge  bg-success text-success rounded-circle mr-1">o</span>Online</p></pre>
+                                    </h6>
+                                    
+                             </footer>
+                </div>
+       <!-- <** left-content-end**> -->
+           <!-- <** Right-content-start **> -->
+           <div class ="col-md-9 mid-content">
+             <!-- <** Right-header-start **> -->
+               <div class ="row">
+                 <div class ="col-md-12 mid-header">
+                      <div class ="row">
+                          <div class ="col-md-1">
+                                <a class="btn mt-3" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="fas fa-bars"></i>
+                                </a>
+                            </div>
+                          <div class ="col-md-6 mt-3">
+                                <form class="form-inline my-2 my-lg-0">
+                                  <input class="form-control  border-0" type="search" placeholder="Search Projects" aria-label="Search">
+                                </form>
+                          </div>
+                          <div class ="col-md-5 right-header">
+                              <div class ="float-right">
+                                  <div class="dropdown float-left ">
+                                      <button class="btn border-0  " type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <img src ="hang.jpg" width="30" height ="30"/>
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right mid-dropdown" aria-labelledby="dropdownMenuButton">
+                                        <div class="card dropdown-card">
+                                          <div class="card-header bg-white">
+                                            <h6  class="text-center"> 4 New Messages</h6>
+                                          </div>
+                                        <div class="body-content1  border-bottom">
+                                              <div class="row">
+                                              <div class ="col-md-1 mr-3"><img src="l2.jpg" width="40" height="40" class="rounded-circle mt-3 ml-1" /></div>
+                                              <div class ="col-md-9 ml-3"><h6>Ashley Briggs</h6>
+                                                    <small>Nam pretium turpis et arcu. Duis arcu tortor.</small>
+                                                    <pre><small>15m ago</small></pre></div></div>
+                                        </div>
+                                        <div class="body-content1  border-bottom">
+                                            <div class="row">
+                                                <div class ="col-md-1 mr-3"><img src="l1.jpg" width="40" height="40" class="rounded-circle mt-3 ml-1" /></div>
+                                                <div class ="col-md-9 ml-3"> <h6>Chris Wood</h6>
+                                                <small>Curabitur ligula sapien euismod vitae.</small>
+                                                <pre><small>2h ago</small></pre></div></div>
+                                        </div>
+                                        <div class="body-content1  border-bottom">
+                                            <div class="row">
+                                                <div class ="col-md-1 mr-3"><img src="l3.jpg" width="40" height="40" class="rounded-circle mt-3 ml-1" /></div>
+                                                <div class ="col-md-9 ml-3"> <h6>Stacie Hall</h6> 
+                                                  <small>Pellentesque auctor neque nec uma.</small>
+                                              <pre><small>h4 ago</small></pre></div></div>
+                                          </div>
+                                          <div class="body-content1  border-bottom">
+                                              <div class="row">
+                                              <div class ="col-md-1 mr-3"><img src="l4.jpg" width="40" height="40" class="rounded-circle mt-3 ml-1" /></div>
+                                              <div class ="col-md-9 ml-3">  <h6>Bertha Martin</h6>
+                                              <small>Aenean tellus metus,bibendum sed, posuere ac,mattis non</small>
+                                              <pre><small>5h ago</small></pre></div></div>
+                                          </div>
+                                          <div class= "card-footer bg-white">
+                                            <small class="text-center">Show all messages</small>
+                                          </div>
+                                        </div>
+                                      </div>
+                               </div>
+                               <div class="dropdown float-left ">
+                                  <button class="btn border-0  " type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <img src ="ala.jpg" width="30" height ="30"/>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-right mid-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <div class="card dropdown-card">
+                                      <div class="card-header bg-white">
+                                        <h6 class="text-center"> 4 New Notifications</h6>
+                                      </div>
+                                    <div class="body-content1  border-bottom">
+                                          <div class="row">
+                                          <div class ="col-md-1 mr-3"><img src="d1.jpg" width="30" height="30" class ="mt-3" /></div>
+                                          <div class ="col-md-10"><h6>Updated Completed</h6>
+                                                <small>Restart server 12 to complete the update</small>
+                                                <pre><small>2h ago</small></pre></div></div>
+                                    </div>
+                                    <div class="body-content1  border-bottom">
+                                        <div class="row">
+                                        <div class ="col-md-1 mr-3"><img src="d2.jpg" width="30" height="30" class ="mt-3" /></div>
+                                        <div class ="col-md-10"> <h6>Lorem ipsum</h6>
+                                        <small>Aliquam ex eros, imprediet vulputate hendreritet</small>
+                                        <pre><small>6h ago</small></pre></div></div>
+                                    </div>
+                                    <div class="body-content1  border-bottom">
+                                        <div class="row">
+                                        <div class ="col-md-1 mr-3"><img src="d3.jpg" width="30" height="30" class ="mt-3" /></div>
+                                        <div class ="col-md-10"> <h6>Login from 192.186.1.1</h6>
+                                          <pre><small>6h ago</small></pre></div></div>
+                                      </div>
+                                      <div class="body-content1  border-bottom">
+                                          <div class="row">
+                                          <div class ="col-md-1 mr-3"><img src="d4.jpg" width="30" height="30" class ="mt-3" /></div>
+                                          <div class ="col-md-10">  <h6>New connection</h6>
+                                          <small>Anna accepted your request</small>
+                                          <pre><small>6h ago</small></pre></div></div>
+                                      </div>
+                                      <div class= "card-footer bg-white">
+                                        <small class="text-center">Show all notifications</small>
+                                      </div>
+                                    </div>
+                                  </div>
+                           </div>
+                           <div class="dropdown float-left ">
+                              <button class="btn border-0  mr-2" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <img src ="india.jpg" width="30" height ="30"/>
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <span class="dropdown-item" href="#">English</span>
+                                <span class="dropdown-item" href="#">Spanish</span>
+                                <span class="dropdown-item" href="#">German</span>
+                                <span class="dropdown-item" href="#">Dutch</span>
+                                
+                              </div>
+                       </div>
+                      <img src ="div.jpg" width="40" height ="40" class ="float-left right-img"/>
+                                      <div class="dropdown float-right">
+                                            <button class="btn border-0 dropdown-toggle mr-2" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Divya Gudur
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Profile</a>
+                                              <a class="dropdown-item" href="#">Analytics</a>
+                                              <a class="dropdown-item" href="#">Settings & Privacy</a>
+                                              <a class="dropdown-item" href="#">Help</a>
+                                              <a class="dropdown-item" href="#">Sign Out</a>
+                                            </div>
+                                     </div>
+                                 </div>
+                            </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- <** Right-header-end **> -->
+     
+                <!-- <** Right-mid-4-cards-start **> -->
+                <div class ="row mt-5 ml-3 mr-3">
+                        <div class ="col-md-3 info-cards">
+                           <img src ="a1.jpg" width="50" height="50" class="mt-3 img-icon"  />
+                             <div class="d-inline-block p-2 ml-3 mt-2">
+                                   <h5>2.562</h5>
+                                   <small>Sales Today</small>
+                             </div>  
+                       </div>
+                           <div class ="col-md-3 info-cards">
+                                   <img src ="a2.jpg" width="50" height="50" class="mt-3 img-icon" />
+                                   <div class="d-inline-block p-2 ml-3 mt-2">
+                                         <h5>17.212</h5>
+                                         <small>Visitors Today</small>
+                                   </div> 
+                           </div>
+                           <div class ="col-md-3 info-cards">
+                                   <img src ="a3.jpg" width="50" height="50" class="mt-3 img-icon" />
+                                   <div class="d-inline-block p-2 ml-3 mt-2">
+                                         <h5>$24.300</h5>
+                                         <small>Total Earnings</small>
+                                   </div> 
+                           </div>
+                           <div class ="col-md-3 info-cards">
+                                   <img src ="a4.jpg" width="50" height="50" class="mt-3 img-icon"  />
+                                   <div class="d-inline-block p-2 ml-3 mt-2">
+                                        <h5>43</h5>
+                                        <small>Pending Orders</small>
+                                   </div> 
+                           </div>
+                      </div> 
+                    <!-- <** Right-mid-4-cards-end-**>     -->
+                    <!-- <** Right-mid-Revenue-cards start**> -->
+                       <div class="container">
+                            <div class ="row">
+                                <div class ="col-md-8 mt-4">
+                                    <div class ="card mt-4 card-height0">
+                                            <div class ="card-header bg-white">Total Revenue
+                                            <span class="badge badge-primary badge-pill float-right">14</span>
+                                             </div>
+                                        <div class ="card-body">
+                                          <img src="gg.jpg" width="580" height="400" class ="bg-white" />
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class ="col-md-4 mt-5">
+                            <div class="card left-side card-height0">
+                                <div class="card-header  bg-white">
+                                <span class="badge badge-primary badge-pill float-right">Today</span>
+                                <h6>Daily Feed</h6>
+                                </div>
+                                <div class ="card-body">
+                                     <div class ="list1">
+                                        <img src="l1.jpg" width="30" height="30" />
+                                        <small class="float-right"> 5m ago</small>
+                                        <p class ="text-left ml-5 mid-text">Ashley Briggs started 
+                                        following Stacie Hall </p>
+                                        <pre><small class="ml-5"> Today 7:51 pm </small></pre>
+                                        </li>
+                                    </div>
+                                    <div class ="list1">
+                                            <img src="l2.jpg" width="30" height="30" />
+                                            <small class="float-right"> 30m ago</small>
+                                            <p class ="text-left ml-5 mid-text">Chris Wood posted something 
+                                             on Stacie Hall'stimeline
+                                            <small> Today 7:21 pm </small>
+                                            <p class="list2">Etiam rhoncus.Maecenas tempus,
+                                            tellus eget condimentum rhoncus,
+                                            semper libero,sit amet adipiscing</p></p>
+                                            </li>
+                                    </div>
+                                    <div class ="list1">
+                                            <img src="l3.jpg" width="30" height="30" />
+                                            <small class="float-right"> 1h ago</small>
+                                            <p class ="text-left ml-5 mid-text">Stacie Hall posted a new blog</p>
+                                            <small class="ml-5"> Today 6:35 pm </small>
+                                            </li>
+                                    </div>
+                                            <button class="btn btn-primary btn-block mt-2">Load more</button>
+                                 </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+          <!-- <** Right-mid-revenue - cards-end **>   -->
+          <!-- <** Right-mid-caldender-cards-start--**> -->
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                                <div class ="card mt-4 card-height">
+                                     <div class ="card-header bg-white"> Calender 
+                                        <small class ="float-right"> .... </small>
+                                    </div>
+                                <div class ="card-body card-height">
+                                    <table class="table cal-table">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="7">
+                                                      <span class="btn-group">
+                                                          <a class="btn mr-5"> < </i></a>
+                                                          <a class="btn active">July2019</a>
+                                                          <a class="btn ml-3"> > </i></a>
+                                                      </span>
+                                                    </th>
+                                                </tr>
+                               
+                                    <tr>
+                                        <th >Su</th>
+                                        <th>Mo</th>
+                                        <th>Tu</th>
+                                        <th>We</th>
+                                       <th>Th</th>
+                                        <th>Fr</th>
+                                        <th>Sa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-muted">29</td>
+                                        <td class="text-muted">28</td>
+                                        <td class="text-muted">30</td>
+                                        <td class="text-muted">31</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="btn-primary text-white rounded-circle text-center">5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td class="text-muted">1</td>
+                                        <td class="text-muted">2</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                            <td class="text-muted">3</td>
+                                            <td class="text-muted">4</td>
+                                            <td class="text-muted">5</td>
+                                            <td class="text-muted">6</td>
+                                            <td class="text-muted">7</td>
+                                            <td class="text-muted">8</td>
+                                            <td class="text-muted">9</td>
+                                            
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                            <div class ="col-md-4">
+                                    <div class ="card mt-4 card-height">
+                                            <div class ="card-header bg-white"> Weekly sales
+                                               <small class ="float-right"> .... </small>
+                                           </div>
+                                           <div class ="card-body">
+                                               <img src ="pie.jpg" width ="200" height ="200" class ="mt-5 ml-3" />
+                                               <table class="table">
+                                                    <thead>
+                                                      <tr>
+                                                        <th class ="text-muted">Source</th>
+                                                        <th class ="text-muted">Revenue</th>
+                                                        <th class ="text-muted">Value</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>
+                                                        <span class ="fa fa-fw fa-square text-primary "></span>Direct</td>
+                                                        <td>$2602</td>
+                                                        <td class ="text-success">+43%</td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td>
+                                                            <span class ="fa fa-fw fa-square text-warning "></span>Affiliate</td>
+                                                            <td>$1253</td>
+                                                            <td class ="text-success">+13%</td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td>
+                                                            <span class ="fa fa-fw fa-square text-danger"></span>E-mail</td>
+                                                            <td>$541</td>
+                                                            <td class ="text-success">+24%</td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td>
+                                                            <span class ="fa fa-fw fa-square text-dark"></span>Other</td>
+                                                            <td>$1465</td>
+                                                            <td class ="text-success">+11%</td>
+                                                      </tr>
+                                                    </tbody>
+                                                </table>
+                                           </div>
+
+
+
+                                     </div>
+                            </div>
+
+                            <div class ="col-md-4">
+                                    <div class ="card mt-4 card-height">
+                                            <div class ="card-header bg-white"> Appointments
+                                               <small class ="float-right"> .... </small>
+                                           </div>
+                                           <div class ="card-body bg-light">
+                                                    <h4>You have a meeting today</h4>
+                                                    <small>Your next meeting is in 2 hours. Check your <a href ="#">schedule</a> to see the details.</small>
+                                                
+                                            </div>
+                                            <div class ="card3 mt-3">
+                                                <small class ="float-right mr-3">30m ago</small>
+                                                <h6 class ="ml-3">Chat with Carl and Ashley</h6>
+                                                <p class ="ml-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu...</p>
+                                            </div>
+
+                                            <div class ="card3 mt-3">
+                                                    <small class ="float-right mr-3">2h ago</small>
+                                                    <h6 class ="ml-3">The big launch</h6>
+                                                    <p class ="ml-3">Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc...</p>
+                                            </div>
+
+                                            <div class ="card3 mt-3">
+                                                    <small class ="float-right mr-3">3h ago</small>
+                                                    <h6 class ="ml-3">Coffee break</h6>
+                                                    <p class ="ml-3">Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor...</p>
+                                            </div>
+                                       </div>
+                                   </div>
+                               </div>
+                          </div> 
+                  <!-- <** Right-mid-caldender-cards-end **>         -->
+                  <!-- <** mid-table-project-start **> -->
+            <div class ="container">
+                <div class ="row">
+                    <div class="col-md-8 mb-5">
+                        <div class ="card mt-3 card-height1">
+                                    <div class ="card-header bg-white"> Latest Projects 
+                                            <small class ="float-right"> .... </small>
+                                    </div>
+                                    <div class ="card-body">
+                                            <table class="table border-table table-striped">
+                                                    <thead >
+                                                      <tr >
+                                                        <th class ="text-muted">Name</th>
+                                                        <th class ="text-muted">Start Date</th>
+                                                        <th class ="text-muted">End Date</th>
+                                                        <th class ="text-muted">Status</th>
+                                                        <th class ="text-muted">Assignee</th>
+                                                      </tr>
+                                                    </thead>
+                                                   <tbody>
+                                                       <tr>
+                                                           <td>Project Apollo</td>
+                                                           <td>01/01/2018</td>
+                                                           <td>31/06/2018</td>
+                                                           <td><span class ="badge badge-success text-light">Done</span></td>
+                                                           <td>Carl Jenkins</td>
+                                                       </tr>
+
+                                                       <tr>
+                                                            <td>Project Fireball</td>
+                                                            <td>01/01/2018</td>
+                                                            <td>31/06/2018</td>
+                                                            <td><span class ="badge badge-Danger text-light">Cancelled</span></td>
+                                                            <td>Stacie Hall</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                                <td>Project Nitro</td>
+                                                                <td>01/01/2018</td>
+                                                                <td>31/06/2018</td>
+                                                                <td><span class ="badge badge-Warning text-light">In progress</span></td>
+                                                                <td>Carl Jenkins</td>
+                                                        </tr>
+
+                                                            <tr>
+                                                                    <td>Project Phoenix</td>
+                                                                    <td>01/01/2018</td>
+                                                                    <td>31/06/2018</td>
+                                                                    <td><span class ="badge badge-success text-light">Done</span></td>
+                                                                    <td>Bertha Martin</td>
+                                                            </tr>
+
+                                                                <tr>
+                                                                        <td>Project Romeo</td>
+                                                                        <td>01/01/2018</td>
+                                                                        <td>31/06/2018</td>
+                                                                        <td><span class ="badge badge-success text-light">Done</span></td>
+                                                                        <td>Ashley Briggs</td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                        <td>Project Wombat</td>
+                                                                        <td>01/01/2018</td>
+                                                                        <td>31/06/2018</td>
+                                                                        <td><span class ="badge badge-warning text-light">In progress</span></td>
+                                                                        <td>Bertha Martin</td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                        <td>Project Zircon</td>
+                                                                        <td>01/01/2018</td>
+                                                                        <td>31/06/2018</td>
+                                                                        <td><span class ="badge badge-Danger text-light">Cancelled</span></td>
+                                                                        <td>Stacie Hall</td>
+                                                                 </tr>
+                                                   </tbody>
+                                                </table> 
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class ="col-md-4">
+                                <div class ="card mt-3 card-height1">
+                                        <div class ="card-header bg-white"> Sales / Revenue 
+                                                <small class ="float-right"> .... </small>
+                                        </div>
+                                        <div class ="card-body">
+                                            <img src ="graph.jpg" width="250" height ="350" class ="mt-3" />
+                                        </div>
+                            
+                                   </div>
+                              </div>
+                        </div>
+                   </div>
+              <!-- <** mid-table-project-end **>      -->
+                   <footer class =" card-footer bg-white mid-footer mt-5"> 
+                      <span class =" text-muted mr-3">Support</span> 
+                      <span class ="mr-3 text-muted" >Help Center</span>
+                      <span class ="mr-3 text-muted">Privacy</span>
+                      <span class ="text-muted">Terms of Service</span>
+                      <span class ="float-right mr-2 text-muted">© 2019 - AppStack</span>
+                   <footer> 
+         
+               </div>
+               
+           </div>
+           <!-- <** Right-content-end **>  -->
+     </div>
+   </div>
+  </body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://appstack-react.bootlab.io/ -->
+<html lang="en" class="gr__appstack-react_bootlab_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>AppStack - ReactJS Admin &amp; Dashboard Template</title><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}</style><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><style>body{opacity:0}</style><!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./cube_files/analytics.js.download"></script><script async="" src="./cube_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120946860-2');
+</script><link href="./cube_files/classic.css" type="text/css" rel="stylesheet"></head><body data-gr-c-s-loaded="true" cz-shortcut-listen="true"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="main"><section class="landing-intro pt-6 pt-xl-7"><div class="container"><div class="row"><div class="mx-auto col-md-12 col-lg-9 col-xl-11"><div class="row"><div class="col-xl-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" title="AppStack" class="landing-intro-brand"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path><polyline points="2.32 6.16 12 11 21.68 6.16"></polyline><line x1="12" y1="22.76" x2="12" y2="11"></line></svg><h1 class="text-white my-4">Start creating the best possible user experience for your customers.</h1><p class="text-muted">A professional package that comes with plenty of UI components, forms, tables, charts, dashboards, pages and svg icons. Each one is fully customizable, responsive and easy to use.</p><div class="my-4"><a target="_blank" class="mr-2 btn btn-light btn-lg" href="https://appstack-react.bootlab.io/dashboard/default">Demo</a><a href="https://themes.getbootstrap.com/product/appstack-react-admin-dashboard-template/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">Purchase</a></div><div class="my-5"><div class="d-inline-block mr-3"><h2 class="text-white">500+</h2><span class="text-muted">UI Components</span></div><div class="d-inline-block mr-3"><h2 class="text-white">1500+</h2><span class="text-muted">SVG Icons</span></div><div class="d-inline-block"><h2 class="text-white">45+</h2><span class="text-muted">Demo Pages</span></div></div><div class="my-5"><img src="./cube_files/bootstrap.ffded238.svg" alt="Bootstrap" width="40" class="align-middle mr-2"><img src="./cube_files/sass.b446ca5a.svg" alt="Sass" width="40" class="align-middle mr-2"><img src="./cube_files/webpack.837b970d.svg" alt="Webpack" width="40" class="align-middle mr-2"><img src="./cube_files/npm.21107776.svg" alt="NPM" width="40" class="align-middle mr-2"><img src="./cube_files/react.4fa9f7c2.svg" alt="React" width="40" class="align-middle mr-2"><img src="./cube_files/redux.aa0a3376.svg" alt="Redux" width="36" class="align-middle mr-2"></div></div><div class="ml-auto d-none d-xl-block col-xl-6"><div class="landing-intro-img"><img src="./cube_files/dashboard-default-large.6dc6c31f.png" class="landing-intro-img-default img-fluid" alt="Dashboard Default"><img src="./cube_files/dashboard-analytics-large.8da81be2.png" class="landing-intro-img-analytics img-fluid" alt="Dashboard Analytics"></div></div></div></div></div></div></section><section class="py-6"><div class="container"><div class="row"><div class="mx-auto text-center col-md-11"><div class="mb-3"><h2>Available styles</h2><p class="text-muted">Multiple color schemes available to make this template your very own.</p></div><div class="row"><div class="py-3 col-md-6 col-lg-4"><a target="_blank" href="https://appstack-react.bootlab.io/layouts/theme-classic"><div class="mb-2 shadow-lg cursor-pointer card"><img src="./cube_files/theme-classic.d3b855fe.png" alt="Classic Theme" class="card-img-top"></div></a><h4>Classic</h4></div><div class="py-3 col-md-6 col-lg-4"><a target="_blank" href="https://appstack-react.bootlab.io/layouts/theme-modern"><div class="mb-2 shadow-lg cursor-pointer card"><img src="./cube_files/theme-modern.e36a671b.png" alt="Modern Theme" class="card-img-top"></div></a><h4>Modern <sup><small class="badge badge-primary">New</small></sup></h4></div><div class="py-3 col-md-6 col-lg-4"><a target="_blank" href="https://appstack-react.bootlab.io/layouts/theme-corporate"><div class="mb-2 shadow-lg cursor-pointer card"><img src="./cube_files/theme-corporate.70959605.png" alt="Corporate Theme" class="card-img-top"></div></a><h4>Corporate <sup><small class="badge badge-primary">New</small></sup></h4></div></div><a href="https://themes.getbootstrap.com/product/appstack-react-admin-dashboard-template/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><span class="align-middle"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" class="svg-inline--fa fa-shopping-cart fa-w-18 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg> </span><span class="align-middle">Purchase</span></a></div></div></div></section><section class="py-6 bg-white"><div class="container"><div class="row"><div class="mx-auto text-center col-md-11"><div class="mb-3"><h2>Multiple dashboards</h2><p class="text-muted">The package includes 5 unique dashboard pages.</p></div><div class="row"><div class="py-3 col-md-6 col-lg-4"><a target="_blank" href="https://appstack-react.bootlab.io/dashboard/default"><div class="mb-2 shadow-lg cursor-pointer card"><img src="./cube_files/dashboard-default.d58a6bfa.png" alt="Default Dashboard" class="card-img-top"></div></a><h4>Default</h4></div><div class="py-3 col-md-6 col-lg-4"><a target="_blank" href="https://appstack-react.bootlab.io/dashboard/analytics"><div class="mb-2 shadow-lg cursor-pointer card"><img src="./cube_files/dashboard-analytics.d3b855fe.png" alt="Analytics Dashboard" class="card-img-top"></div></a><h4>Analytics</h4></div><div class="py-3 col-md-6 col-lg-4"><a target="_blank" href="https://appstack-react.bootlab.io/dashboard/e-commerce"><div class="mb-2 shadow-lg cursor-pointer card"><img src="./cube_files/dashboard-e-commerce.3df0a60a.png" alt="E-commerce Dashboard" class="card-img-top"></div></a><h4>E-commerce</h4></div><div class="py-3 col-md-6 col-lg-4"><a target="_blank" href="https://appstack-react.bootlab.io/dashboard/social"><div class="mb-2 shadow-lg cursor-pointer card"><img src="./cube_files/dashboard-social.e213d2b1.png" alt="Social Dashboard" class="card-img-top"></div></a><h4>Social</h4></div><div class="py-3 col-md-6 col-lg-4"><a target="_blank" href="https://appstack-react.bootlab.io/dashboard/crypto"><div class="mb-2 shadow-lg cursor-pointer card"><img src="./cube_files/dashboard-crypto.44536265.png" alt="Crypto Dashboard" class="card-img-top"></div></a><h4>Crypto <sup><small class="badge badge-primary">New</small></sup></h4></div><div class="py-3 col-md-6 col-lg-4"><div class="mb-2 shadow-lg card"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAOECAYAAACxbcj6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNWRHWFIAAByDSURBVHhe7d3bbhtHGkbRef8XHZ2oo3VwbjioAA6QyY/MBBSl3c11sQDDlsmq7643JOpfHz9/OwIAAABAlYAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQAAAECagAUAAABAmoAFAAAAQJqABQD8rde39+PT88vx/uHxeHt3OF7f3B6vrm+O/766/t368/q79W/ra9bXrv8zvdae2GVmFwDgHAQsAOAvVlB4eHz6PTT8Cg//1Pq/6zX2FCfsMrMLAHBuAhYA8Icfr2/Hw+F+DAynWK+5Xnt6zy2wy8wuAMBXEbAAgOPb+8fxcP8wxoTPtN5jvdd0hiK7zOwCAHw1AQsALtzzy48/fUbRua33Wu85naXELjO7AADfQcACgAu2PkR7igZfYb33dKYCu8zsAgB8FwELAC7Q+8fP490ZPrvon1pnWGeZzvgd7DKzCwDw3QQsALgwKwDc3h3GQPAd1lkKUcIuM7sAAAUCFgBcmMJ30vy3dabprF/JLjO7AAAFAhYAXJDv/Ayj/2X9xrnpzF/BLjO7AAAVAhYAXIj1m9ymEFDy9Pwynv2c7DKzCwBQImABwAV4e/84Xl3fjBGgZJ1xnXW6wznYZWYXAKBGwAKAC7B+3GoKAEWHL/x8I7vM7AIA1AhYALBzP17fxgf/snXm6S6fyS4zuwAARQIWAOzc+g6V6aG/7Ct+y5xdZnYBAIoELADYsde39/GBfwvW2ac7fQa7zOwCAFQJWACwYw+PT+PD/hass093+gx2mdkFAKgSsABgx65vbseH/S1YZ5/u9BnsMrMLAFAlYAHATm35x8F+OcePhdllZhcAoEzAAoCdenp+GR/yt2TdYbrbKewyswsAUCZgAcBO3T88jg/5W3K4fxjvdgq7zOwCAJQJWACwU7d3h/Ehf0vWHaa7ncIuM7sAAGUCFgDs1JY/kPuXc3wwt11mdgEAygQsANipq+ub8SF/S9Ydprudwi4zuwAAZQIWAOzU9IC/RdPdTjG9xxZNdzvF9B5bNN0NANg+AQsAdmp6uN+i6W6nmN5ji6a7nWJ6jy2a7gYAbJ+ABQA75UfCZnaZ2QUAKBOwAGCndvGh3GcIEnaZ2QUAKBOwAGCnbu8O40P+lqw7THc7hV1mdgEAygQsANipw/3D+JC/JesO091OYZeZXQCAMgELAHbq6fllfMjfknWH6W6nsMvMLgBAmYAFADv1+vY+PuRvybrDdLdT2GVmFwCgTMACgB3b8gdzr7NPd/oMdpnZBQCoErAAYMceHp/Gh/0tWGef7vQZ7DKzCwBQJWABwI5t+cfCzvnjYHaZ2QUAqBKwAGDn7g734wN/2TrzdJfPZJeZXQCAIgELAHbux+vb+NBfts483eUz2WVmFwCgSMACgAtw2NB31ayzTnc4B7vM7AIA1AhYAHAB3t4/jlfXN2MAKFlnXGed7nAOdpnZBQCoEbAA4EI8Pb+MEaBknXE6+znZZWYXAKBEwAKAC3K4fxhDQME623Tmr2CXmV0AgAoBCwAuyPvHz+Pt3WEMAt9pnWmdbTrzV7DLzC4AQIWABQAXZj3439zejWHgO6yzFGKEXWZ2AQAKBCwAuEArABS+s6b2nTR2mdkFAPhuAhYAXKgVAr7zM47WexdjhF1mdgEAvpOABQAXbv0mt6vrmzEanMN6ry389ji7zOwCAHwHAQsAOL69fxwPh/sxIHym9R7rvaYzFNllZhcA4KsJWADAH368vh3vzhAm1muu157ecwvsMrMLAPBVBCwA4C9e396PD49Px+ub2zEw/D/W/12vsV5reo8tssvMLgDAuQlYAMDfWkFhfQbR+hDt9Vvgrq9v/vQZSOvP6+/Wv62vWV97CRHCLjO7AADnIGABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAAJAmYAEAAACQJmABAAAAkCZgAQAAABD22/E/a1yjsopGK8cAAAAASUVORK5CYII=" alt="Coming soon" class="card-img-top"></div><h4>More coming soon</h4></div></div></div></div></div></section><section class="py-6"><div class="container"><div class="row"><div class="mx-auto text-center col-md-10"><div class="mb-3"><h2>Features</h2><p class="text-muted">A responsive dashboard built for everyone who wants to create webapps on top of Bootstrap.</p></div><div class="row"><div class="col-md-6 col-lg-4"><div class="my-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="landing-features-icon"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg><h5 class="mt-2 font-weight-bold">Responsive</h5><p class="text-muted">With mobile, tablet &amp; desktop support it doesn't matter what device you're using. Our themes are responsive in all browsers.</p></div></div><div class="col-md-6 col-lg-4"><div class="my-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="landing-features-icon"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg><h5 class="mt-2 font-weight-bold">Customizable</h5><p class="text-muted">You don't need to be an expert to customize our themes. Our code is very readable and well documented.</p></div></div><div class="col-md-6 col-lg-4"><div class="my-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="landing-features-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><h5 class="mt-2 font-weight-bold">Quick support</h5><p class="text-muted">Our themes are supported by specialists who provide quick and effective support. Usually an email reply takes &lt;24h.</p></div></div><div class="col-md-6 col-lg-4"><div class="my-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="landing-features-icon"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg><h5 class="mt-2 font-weight-bold">Cross browser</h5><p class="text-muted">Our themes are working perfectly with: Chrome, Firefox, Safari, Opera and IE 10+. We're working hard to support them.</p></div></div><div class="col-md-6 col-lg-4"><div class="my-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="landing-features-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg><h5 class="mt-2 font-weight-bold">Clean code</h5><p class="text-muted">We strictly followed Bootstrap's guidelines to make your integration as easy as possible. All code is handwritten.</p></div></div><div class="col-md-6 col-lg-4"><div class="my-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="landing-features-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg><h5 class="mt-2 font-weight-bold">Free updates</h5><p class="text-muted">From time to time you'll receive an update containing new components, improvements and bugfixes.</p></div></div></div><a target="_blank" class="btn btn-primary btn-lg" href="https://appstack-react.bootlab.io/documentation"><span class="align-middle"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" class="svg-inline--fa fa-book-open fa-w-18 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg> </span><span class="align-middle">Documentation</span></a></div></div></div></section><section class="py-6 bg-white"><div class="container"><div class="row"><div class="mx-auto text-center col-md-9"><div class="mb-4"><h2>Testimonials</h2><p class="text-muted">What others are saying about AppStack ReactJS.</p></div><div class="bg-light border-0 card"><div class="card-body"><blockquote class="blockquote mb-0"><p class="mb-2">Seeing the file structure of the code is enough to know that this was a properly cared for and loved project. The react project is easy to understand and modify, and everything is so properly set up that any new additions I'd make would feel like a native extension of the theme versus a simple hack. If you ever need inspiration, the example pages are plentiful and varied, I definitely feel like this will save me hundredths of hours I'd otherwise spend on designing (with a subpar outcome).</p><footer class="blockquote-footer">Alejandro at <cite title="Bootstrap Themes">Bootstrap Themes</cite></footer></blockquote></div></div><div class="bg-light border-0 card"><div class="card-body"><blockquote class="blockquote mb-0"><p class="mb-2">We are totally amazed with a simplicity and the design of AppStack. Nice and clean. Easy to integrate in our React-apps stack. Probably saved us hundreds of hours of development. We are an Enterprise customer and absolutely amazed with the support Bootlab has provided us. Totally recommended to anyone: private or enterprise business, if you count your money and really need "noBS" and beautiful solution. AppStack rocks!</p><footer class="blockquote-footer">Nikita at <cite title="Bootstrap Themes">Bootstrap Themes</cite></footer></blockquote></div></div></div></div></div></section><section class="py-5"><div class="text-center container"><h2 class="mb-0">Trusted by over 2500+ customers world wide <a href="https://themes.getbootstrap.com/product/appstack-react-admin-dashboard-template/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><span class="align-middle"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" class="svg-inline--fa fa-shopping-cart fa-w-18 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg> </span><span class="align-middle">Purchase</span></a></h2></div></section></div><span class="redux-toastr" aria-live="assertive"><span><div class="top-left"></div><div class="top-right"></div><div class="top-center"></div><div class="bottom-left"></div><div class="bottom-right"></div><div class="bottom-center"></div></span></span></div><script>!function(f){function e(e){for(var r,t,n=e[0],o=e[1],c=e[2],a=0,u=[];a<n.length;a++)t=n[a],l[t]&&u.push(l[t][0]),l[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(f[r]=o[r]);for(s&&s(e);u.length;)u.shift()();return d.push.apply(d,c||[]),i()}function i(){for(var e,r=0;r<d.length;r++){for(var t=d[r],n=!0,o=1;o<t.length;o++){var c=t[o];0!==l[c]&&(n=!1)}n&&(d.splice(r--,1),e=p(p.s=t[0]))}return e}var t={},l={6:0},d=[];function p(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return f[e].call(r.exports,r,r.exports,p),r.l=!0,r.exports}p.e=function(c){var e=[],t=l[c];if(0!==t)if(t)e.push(t[2]);else{var r=new Promise(function(e,r){t=l[c]=[e,r]});e.push(t[2]=r);var n,a=document.createElement("script");a.charset="utf-8",a.timeout=120,p.nc&&a.setAttribute("nonce",p.nc),a.src=p.p+"static/js/"+({}[c]||c)+"."+{0:"88769587",1:"974e8988",2:"7876fa89",3:"4d362201",4:"bc77eda8",8:"ce59b94a",9:"2105ff5d",10:"abe9f16f",11:"c41b5655",12:"23d15921",13:"b116b31f",14:"48bcfbc4",15:"67001dac",16:"13bc99ea",17:"447c46a1",18:"c7f1c9e1",19:"b8e823e9",20:"e7230483",21:"bd33b25c",22:"459dbdb2",23:"18d023ea",24:"29413a71",25:"a3211746",26:"2ccb1bc3",27:"a61192e3",28:"f127d2f0",29:"768da6fe",30:"c713f5d7",31:"5f583f0e",32:"78f25c18",33:"98ca3320"}[c]+".chunk.js",n=function(e){a.onerror=a.onload=null,clearTimeout(u);var r=l[c];if(0!==r){if(r){var t=e&&("load"===e.type?"missing":e.type),n=e&&e.target&&e.target.src,o=new Error("Loading chunk "+c+" failed.\n("+t+": "+n+")");o.type=t,o.request=n,r[1](o)}l[c]=void 0}};var u=setTimeout(function(){n({type:"timeout",target:a})},12e4);a.onerror=a.onload=n,document.head.appendChild(a)}return Promise.all(e)},p.m=f,p.c=t,p.d=function(e,r,t){p.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},p.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},p.t=function(r,e){if(1&e&&(r=p(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(p.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)p.d(t,n,function(e){return r[e]}.bind(null,n));return t},p.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return p.d(r,"a",r),r},p.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},p.p="/",p.oe=function(e){throw console.error(e),e};var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;i()}([])</script><script src="./cube_files/7.b59c6933.chunk.js.download"></script><script src="./cube_files/main.3873b891.chunk.js.download"></script></body></html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+ .modal-content{
+position:absolute;
+top:-1000px;
+width:100%;
+}
+</style>
+
+
+</head>
+<body>
+<div class ="container-fluid my-5">
+<button class ="btn btn-success my-4" onclick ="show()"> Click Here </button>
+<div class ="card modal-content" id ="modal">
+<div class ="card-header"> Modal Example 1 </div>
+<div class ="cad-body">
+<p>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the <body> so that modal content scrolls instead.</p>
+</div>
+<div class ="card-footer"> 
+<button class ="btn btn-success my-4"> Submit </button>
+<button class ="btn btn-danger my-4" onclick ="cancel()"> Cancel </button>
+ </div>
+</div>
+</div>
+
+<script>
+ function show(){
+  $("#modal").attr('style', 'top:250px');
+  }
+  
+  function cancel(){
+  $("#modal").removeAttr('style');
+  }
+  </script>
+			
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

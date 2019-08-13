@@ -1,0 +1,600 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+      .left-card{
+        padding-left:0px !important;
+        padding-right:0px !important;
+       }
+       .card-left-header{
+           background: rgba(2, 33, 126, 0.822);
+           height:60px;
+       }
+      
+       .card-left-header h3{
+           font-family:monospace;
+           font-size: 45px;
+       }
+       .card-right-header{
+           background:rgb(46, 83, 194);
+           height:60px;
+       }
+       .left-dropdown{
+           margin-left:-27px;
+       }
+       .left-content{
+           font-size:15px;
+       }
+       .search-width{
+           width:600px;
+       }
+      /* <** Right-side-style **>  */
+      .right-header{
+          background: #3366FF;
+          height: 68px;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+      }
+      .right-mid-card{
+        border: 1px solid #cacaca;
+        height: 150px;
+        border-radius: 7px;
+        width:650px;
+      }
+      .right-mid-card1{
+        border-right: 1px solid #cacaca;
+      }
+      .right-mid-card2 .card{
+          height:460px;
+      }
+      .right-mid-card3 {
+          height:520px;
+      }
+      .right-mid-week{
+          width:400px;
+      }
+      .dropdown-menu-right{
+          padding:0px !important;
+      }
+      .right-search-dropdown{
+          width:500px;
+          padding:0px !important;
+      }
+
+    </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+             <div class="row">
+                    <div class="col-md-3 card-left-header">
+                            <h3 class="text-white  mt-2 font-weight-bold">loper</h3>
+                    </div>
+                    <div class="col-md-9 card-right-header">
+                        <div class="row">
+                             <div class="col-md-9">
+                                    <div class="dropdown">
+                                            <button class="btn btn-tranparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="input-group input-group-md mt-2 search-width">
+                                                    <div class="input-group-prepend ">
+                                                        <span class="input-group-text bg-transparent" id="inputGroup-sizing-md"></span>
+                                                            </div>
+                                                                <input type="text" class="form-control bg-transparent" placeholder="Search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                                            </div>
+                                            </button>
+                                            <div class="dropdown-menu right-search-dropdown" aria-labelledby="dropdownMenuButton">
+                                                <div class="card right-search-dropdown p-0">
+                                                    <!-- <div class="card-body"> -->
+                                                        <h6 class="text-muted font-weight-bold ml-2 mt-2">Shortcut</h6>
+                                                        <div class="border-bottom ">
+                                                            <img src ="lop5.jpg" width="40" height="40" /> Create User
+                                                            <div><img src ="lop6.jpg" width="40" height="40" /> Create Invoice </div>
+                                                        </div>
+                                                        <div class="border-bottom">
+                                                        <h6 class="text-muted font-weight-bold ml-2 mt-2">In Projects<a href="" class="float-right mr-2">Show more</a></h6>
+                                                       
+                                                        <img src ="lop9.jpg" width="40" height="40"/>Bootstrap
+                                                        <div><img src ="lop7.jpg" width="40" height="40" /> Slack </div>
+                                                      </div>
+                                                      <h6 class="text-muted font-weight-bold ml-2 mt-2">Another Section<a href="" class="float-right mr-2">Show more</a></h6>
+                                                      <div>
+                                                       <img src ="lop8.jpg" width="40" height="40"/>Product name
+                                                    </div>
+                                                    <div class="card-footer bg-white">
+                                                       <button class ="btn btn-block bg-transparent text-primary">Show all results</button>
+                                                    </div>
+                                                <!-- </div> -->
+                                             </div>
+                                          </div>
+                                    </div> 
+                                 </div>
+                           
+                            <div class="col-md-3 card-left-header">
+                                    <img src="div.jpg" width="40" height="40" class="rounded-circle  mt-2"/>
+                                    <sapn class="text-white font-weight-bold">Divya Gudur</sapn>
+                            </div>
+                        </div>
+                  </div>
+            </div>
+                <!-- <** Left-start ** > -->
+            <div class="row h-100">
+                <div class="col-md-3 bg-light left-card">
+                    <div class="card bg-light h-100">
+                        <div class="card-body">
+                            <span class ="menu-icon fas fa-home text-primary"></span>
+                            <sapn class="text-primary ml-3 font-weight-bold">Dashboard</sapn>
+                            <div class="left-menu">
+                                <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar1" aria-expanded="true">
+                                                <div class ="d-flex justify-content-between align-items-left left-dropdown">
+                                                        <span class="fas fa-file text-dark mt-1"> </span>
+                                                        <a class="navbar-brand left-content text-dark mr-5" href="#">App Pages</a>
+                                                        <h6 class="badge badge-warning">New</h6>
+                                                        <span class="fa fa-caret-right text-dark"></span>
+                                                </div>
+                                        </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar1" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Clients</small></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Teams</small></a>
+                                            </li>
+                                            <nav class="navbar  navbar-dark ">
+                                                    <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar2" aria-expanded="true">
+                                                            <span><a class="navbar-brand text-dark" href="#"><small>Team</small></a></span>
+                                                           <span class="fa fa-caret-right text-dark float-right"></span>
+                                                    </button>
+                                                    <div class="navbar-collapse collapse hide" id="collapsibleNavbar2" style>
+                                                      <ul class="navbar-nav text-center ml-5">
+                                                        <li class="nav-item ">
+                                                          <a class="nav-link text-muted" href="javascript:void(0)"><small>Overview</small></a>
+                                                        </li>
+                                                        <li class="nav-item ">
+                                                           <a class="nav-link text-muted" href="javascript:void(0)"><small>Feeds</small></a>
+                                                        </li>
+                                                        <li class="nav-item ">
+                                                            <a class="nav-link text-muted" href="javascript:void(0)"><small>Projects</small></a>
+                                                        </li>
+                                                        <li class="nav-item ">
+                                                            <a class="nav-link text-muted" href="javascript:void(0)"><small>Members</small></a>
+                                                        </li>
+                                                       </ul> 
+                                                    </div>	
+                                            </nav>
+                                            <nav class="navbar  navbar-dark ">
+                                                    <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar3" aria-expanded="true">
+                                                         <span><a class="navbar-brand text-dark " href="#"><small>Project</small></a></span>
+                                                        <span class="fa fa-caret-right text-dark float-right"></span>
+                                                     </button>
+                                                    <div class="navbar-collapse collapse hide" id="collapsibleNavbar3" style>
+                                                      <ul class="navbar-nav text-center ml-5">
+                                                        <li class="nav-item ">
+                                                          <a class="nav-link text-muted" href="javascript:void(0)"><small>Overview</small></a>
+                                                        </li>
+                                                        <li class="nav-item ">
+                                                           <a class="nav-link text-muted" href="javascript:void(0)"><small>Board</small></a>
+                                                        </li>
+                                                        <li class="nav-item ">
+                                                            <a class="nav-link text-muted" href="javascript:void(0)"><small>Gantt View</small></a>
+                                                        </li>
+                                                       </ul> 
+                                                    </div>	
+                                            </nav>
+                                             <li class="nav-item">
+                                                    <a class="nav-link text-muted" href="javascript:void(0)"><small>calender</small></a>
+                                             </li>
+                                             <li class="nav-item">
+                                                    <a class="nav-link text-muted" href="javascript:void(0)"><small>Invoices</small></a>
+                                             </li>
+                                             <li class="nav-item">
+                                                    <a class="nav-link text-muted" href="javascript:void(0)"><small>Messages</small></a>
+                                             </li>
+                                             <li class="nav-item">
+                                                    <a class="nav-link text-muted" href="javascript:void(0)"><small>Conversations</small></a>
+                                             </li>
+                                         </ul>
+                                        </div> 
+                                 </nav>  
+                                 <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbarz" aria-expanded="true">
+                                                <a class="navbar-brand text-dark float-left ml-3 left-content " href="#">Auth</a>
+                                               <span class="fa fa-caret-right text-dark float-right"></span>
+                                        </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbarz" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Coming Soon V1</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                               <a class="nav-link text-muted" href="javascript:void(0)"><small>Coming Soon V2</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Cookie Consent</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Empty State</small></a>
+                                            </li>
+                                           </ul> 
+                                        </div>	
+                                </nav>
+
+                                <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar3" aria-expanded="true">
+                                                <a class="navbar-brand text-dark float-left ml-3 left-content" href="#">User</a>
+                                               <span class="fa fa-caret-right text-dark float-right"></span>
+                                        </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar3" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Profile</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                               <a class="nav-link text-muted" href="javascript:void(0)"><small>Activities</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Projects</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Team</small></a>
+                                            </li>
+                                           </ul> 
+                                        </div>	
+                                </nav>
+
+                                <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar4" aria-expanded="true">
+                                                <a class="navbar-brand text-dark float-left ml-3 left-content mr-5" href="#">Layouts</a>
+                                                <span class ="badge badge-primary ml-5">+4</span>
+                                               <span class="fa fa-caret-right text-dark float-right"></span>
+                                        </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar4" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Blank Page</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                               <a class="nav-link text-muted" href="javascript:void(0)"><small>Header no Search</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Horizontal Menu</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Full Width</small></a>
+                                            </li>
+                                           </ul> 
+                                        </div>	
+                                </nav>
+                                <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar5" aria-expanded="true">
+                                                <a class="navbar-brand text-dark float-left ml-3 left-content" href="#">Landing Page</a>
+                                               
+                                        </button>
+                                </nav>         
+                                 <div class="text-muted font-weight-bold">INTERFACES</div>
+                                 <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar05" aria-expanded="true">
+                                             <a class="navbar-brand text-dark float-left ml-3 left-content" href="#">Components</a>
+                                            <span class="fa fa-caret-right text-dark float-right"></span>
+                                         </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar05" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>General</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                               <a class="nav-link text-muted" href="javascript:void(0)"><small>Icons</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Rich Media</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                    <a class="nav-link text-muted" href="javascript:void(0)"><small>List Views</small></a>
+                                            </li>
+                                           </ul> 
+                                        </div>	
+                                </nav>
+                                <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar6" aria-expanded="true">
+                                             <a class="navbar-brand text-dark float-left ml-3 left-content" href="#">Forms</a>
+                                            <span class="fa fa-caret-right text-dark float-right"></span>
+                                         </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar6" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Basic Elements</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                               <a class="nav-link text-muted" href="javascript:void(0)"><small>Autocompletes</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Pickers</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                    <a class="nav-link text-muted" href="javascript:void(0)"><small>Editors</small></a>
+                                            </li>
+                                           </ul> 
+                                        </div>	
+                                </nav>
+
+                                <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar7" aria-expanded="true">
+                                             <a class="navbar-brand text-dark float-left ml-3 left-content" href="#">Tables</a>
+                                            <span class="fa fa-caret-right text-dark float-right"></span>
+                                         </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar7" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Basic Table</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                               <a class="nav-link text-muted" href="javascript:void(0)"><small>Datatables</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Responsive Datatables</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                    <a class="nav-link text-muted" href="javascript:void(0)"><small>Filter Columns</small></a>
+                                            </li>
+                                           </ul> 
+                                        </div>	
+                                </nav>
+                                <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar8" aria-expanded="true">
+                                             <a class="navbar-brand text-dark float-left ml-3 left-content" href="#">Collections</a>
+                                            <span class="fa fa-caret-right text-dark float-right"></span>
+                                         </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar8" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Chart.js</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                               <a class="nav-link text-muted" href="javascript:void(0)"><small>Flot</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-muted" href="javascript:void(0)"><small>Inline Charts</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                    <a class="nav-link text-muted" href="javascript:void(0)"><small>Vector Map</small></a>
+                                            </li>
+                                           </ul> 
+                                        </div>	
+                                </nav>
+
+                                <nav class="navbar  navbar-dark ">
+                                        <button class="navbar-toggler w-100 border-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar9" aria-expanded="true">
+                                             <a class="navbar-brand text-dark float-left ml-3 left-content" href="#">Level Menu</a>
+                                            <span class="fa fa-caret-right text-dark float-right"></span>
+                                         </button>
+                                        <div class="navbar-collapse collapse hide" id="collapsibleNavbar9" style>
+                                          <ul class="navbar-nav text-center">
+                                            <li class="nav-item ">
+                                              <a class="nav-link text-muted" href="javascript:void(0)"><small>Menu Item</small></a>
+                                            </li>
+                                            <li class="nav-item ">
+                                               <a class="nav-link text-muted" href="javascript:void(0)"><small>Menu Item</small></a>
+                                            </li>
+                                           </ul> 
+                                        </div>	
+                                </nav>
+                             </div>
+                         </div>
+                         
+                         <div class="card-footer ">
+                             <button class="btn btn-light btn-block text-primary">
+                                 <span class="text-transparent">Night Mode</span>
+                                 <span class ="fas fa-moon ml-2"></span>
+                             </button>
+                         </div>
+                    </div>
+                </div>
+            <!-- <** left-end ** >     -->
+            <!-- <** right-mid-start **> -->
+                <div class="col-md-9 bg-light">
+                    <!-- <** right-mid1 **> -->
+                    <div class="row">
+                        <div class="col-md-9 mt-3">
+                            <div class="text-dark font-weight-bold">Hi, Beni.</div>
+                            <div class="text-muted">Here's What's happening with your business today</div>
+                        </div>
+                        <div class="col-md-2 mt-3">
+                                <div class="dropdown">
+                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          This Week
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                         <div class="card right-mid-week">
+                                             <div class="card-body">
+                                                 <span>Today</span>
+                                                 <span class="float-right">Mar 27</span>
+                                                 <div class="mt-3">
+                                                     <span>Yesterday</span>
+                                                     <span class="float-right">Mar 26</span>
+                                                 </div>
+                                                 <div class="mt-3">
+                                                        <span>This Week</span>
+                                                        <span class="float-right">Mar 21-27</span>
+                                                </div>
+                                                    <div class="mt-3">
+                                                            <span>This Month</span>
+                                                            <span class="float-right">Mar 1-31</span>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                            <span>This year</span>
+                                                            <span class="float-right">2019</span>
+                                                    </div>
+                                             </div>
+
+                                         </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                  <!-- <** right-mid1 end **>   -->
+                  <!-- <** right-mid2 **> -->
+                  <div class="row mt-5 ml-2">
+                      <div class="col-md-8">
+                          <div class="row right-mid-card">
+                              <div class="col-md-4 right-mid-card1">
+                                  <div class="text-center mt-5 font-weight-bold"> <a href="btask1.html" class="text-muted">Teams</a></div>
+                                  <h2 class="text-center mt-0 ">8</h2>
+                              </div>
+                              <div class="col-md-4 right-mid-card1">
+                                    <div class="text-center mt-5 font-weight-bold"> <a href="btask1.html" class="text-muted">Projects</a></div>
+                                    <h2 class="text-center mt-0 ">12</h2>
+                              </div>
+                              <div class="col-md-4">
+                                    <div class="text-center mt-5 font-weight-bold"> <a href="btask1.html" class="text-muted">Active Tasks</a></div>
+                                    <h2 class="text-center mt-0 ">64</h2>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 ml-2 right-mid-card">
+                          <div class="badge badge-success mt-5">ONGOING TASKS</div>
+                          <h2>8</h2>
+                      </div>
+                  </div>
+                  <!-- <** right-mid2-end **> -->
+                  <!-- <** right-mid3-start **> -->
+                  <div class="row">
+                      <div class="col-md-4 right-mid-card2">
+                          <div class="card mt-4">
+                              <div class="card-body">
+                                  <div class="font-weight-bold">Completion Task</div>
+                                  <img src ="lop1.jpg" width="280" height="330" class ="mt-3"/>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 right-mid-card2">
+                            <div class="card mt-4">
+                                <div class="card-body">
+                                    <div class ="font-weight-bold">Task Performance</div>
+                                    <img src ="lop2.jpg" width="280" height="300"/>
+                                </div>
+                                <div class="card-footer bg-transparent">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                                <h5 class="fa fa-fw fa-circle text-primary " aria-hidden="true"></h5>
+                                                <span>100%</span>
+                                                <div class="text-muted small ml-2">Assigned</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <h5 class="fa fa-fw fa-circle text-dark " aria-hidden="true"></h5>
+                                                <span>75%</span>
+                                                <div class="text-muted small ml-1">Completed</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <h5 class="fa fa-fw fa-circle text-success " aria-hidden="true"></h5>
+                                                <span>60%</span>
+                                                <div class="text-muted small ml-2">Active</div>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 right-mid-card2">
+                                <div class="card mt-4">
+                                    <div class="card-body">
+                                        <div class="font-weight-bold">Leaderboard</div>
+                                        <span class ="fa fa-fw fa-circle text-light"></span>
+                                        <span class ="text-dark small">Task</span>
+                                        <span class ="fa fa-fw fa-circle text-dark"></span>
+                                        <span class ="text-dark small">Completed</span>
+                                        <span class ="fa fa-fw fa-circle text-success"></span>
+                                        <span class ="text-dark small">Active</span>
+                                        <span class ="fa fa-fw fa-circle text-danger"></span>
+                                        <span class ="text-dark small">Due</span>
+                                        <img src ="lop3.jpg" width="280" height="300"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+              <!-- <** right-mid3-end **>     -->
+              <!-- <** right-mid4-start **> -->
+              <div class="row">
+                  <div class="col-md-6 mb-5">
+                      <div class="card mt-4 right-mid-card3">
+                          <div class="card-header bg-white">
+                              <div class="font-weight-bold">Active Projects</div>
+                          </div>  
+                              <div class="card-body">
+                              <img src="lop4.jpg" width="420" height="400"/>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="card mt-4 right-mid-card3">
+                          <div class="card-header bg-white">
+                              <div class="font-weight-bold">Active Tasks:To-Dos</div>
+                          </div>
+                          <div class="card-body">
+                              <div class="text-muted small font-weight-bold">Looper Admin Theme (1/3)</div>
+                              <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                                    <label class="custom-control-label text-secondary" for="customControlValidation1">Eat corn on the cab</label>
+                              </div>
+                              <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox"  class="custom-control-input" id="customControlValidation2" required>
+                                    <label class="custom-control-label text-secondary" for="customControlValidation2"><strike>Mix up a pitcher of sangria</strike></label>
+                              </div>
+
+                              <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox"  class="custom-control-input" id="customControlValidation3" required>
+                                    <label class="custom-control-label text-secondary" for="customControlValidation3">Have a barbecue</label>
+                              </div>
+
+                              <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox"  class="custom-control-input" id="customControlValidation4" required>
+                                    <label class="custom-control-label text-secondary" for="customControlValidation4">Ride a roller coaster--<small class="text-danger">Overdue in 3 days</small></label>
+                              </div>
+                              <div class="text-muted small font-weight-bold mt-4">Smart Paper (0/2)</div>
+                              <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox"  class="custom-control-input" id="customControlValidation5" required>
+                                    <label class="custom-control-label text-secondary" for="customControlValidation5">Bring a blanket and lie on the grass at an outdoor concert</label>
+                              </div>
+
+                              <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox"  class="custom-control-input" id="customControlValidation6" required>
+                                    <label class="custom-control-label text-secondary" for="customControlValidation6">Collect seashells at the beach</label>
+                              </div>
+
+                              <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox"  class="custom-control-input" id="customControlValidation7" required>
+                                    <label class="custom-control-label text-secondary" for="customControlValidation7">Swim in a lake</label>
+                              </div>
+
+                              <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox"  class="custom-control-input" id="customControlValidation8" required>
+                                    <label class="custom-control-label text-secondary" for="customControlValidation8">Get enough sleep!</label>
+                              </div>
+                          </div>
+                          <div class="card-footer bg-transparent">
+                            <div class ="text-center"><a href ="#" class="text-center"><u>View all</u></a></div>
+                          </div>  
+                        </div>  
+                       </div> 
+                    </div>
+             <!-- <** right-mid4-end **>  -->
+                  <div class="text-center mt-5">
+                      <a href ="#" >Settings</a>
+                      <a href ="#" class="ml-3">Help Center</a>
+                      <a href ="#" class="ml-3">Privacy</a>
+                      <a href ="#" class="ml-3">Terms of Service</a>
+                   </div>
+                   <div class ="text-center text-muted">
+                        Copyright © 2018. All right reserved.
+                   </div>
+             
+            <!-- <** right-mid-final-end **> -->
+            </div>
+        </div>
+    </body>
+</html>    
