@@ -1,0 +1,152 @@
+<html>
+    <body>
+        <script>
+            // get the type of datatype
+        // function type(){
+        // var input = "VBM Infotech";
+        // var datatype = typeof input;
+        // if(datatype=="string"){
+        //     console.log("VBM Infotech + this is string");
+        // }
+        // if(datatype=="number"){
+        //     console.log("VBM Infotech + this is number");
+        // }
+        // if(datatype=="boolean"){
+        //     console.log("VBM Infotech + this is boolean");
+        // }
+        // if(datatype=="object"){
+        //     console.log("VBM Infotech + this is object");
+        // }
+        // }
+        // type();
+        // console.log(datatype)
+
+        // Method 2
+       //          function type(a) {
+      //            if(typeof(a) == 'string') {
+     //            console.log('a is a string')
+    //            } else if(typeof(a) == 'number') {
+    //            console.log('a is a number')
+    //         }
+    //            else if(typeof(a) == 'boolean') {
+    //            console.log('a is a boolean')
+    //        }
+    //         else if(typeof(a) == 'object') {
+    //        console.log('a is a object')
+    //     }
+    //   }
+    //    type(true)
+
+
+
+
+        // function to type given number is even or not
+        // Method:1
+//  function even(n) {
+//         if (n % 2 == 0) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+// }
+// var b = even(4)
+// console.log(b)
+
+// Method:2
+// function even(i) {
+// if (i % 2 == 0) {
+// console.log(i + " is even");
+// } else {
+// console.log(i + " is odd");
+// }
+// }
+// even(11);
+
+// type 1-10 even or odd 
+// function evenodd(n) {
+// for (var i = 0; i <= n; i++) {
+// if (i % 2 == 0) {
+// console.log(i + " is even");
+// } else {
+// console.log(i + " is odd");
+// }
+// }
+// }
+// evenodd(10);
+
+
+// display day based on given input
+// function printday(){
+// switch (4) {
+//   case 0:day = "Sunday";
+//     break;
+//   case 1:day = "Monday";
+//     break;
+//   case 2:day = "Tuesday";
+//     break;
+//   case 3:day = "Wednesday";
+//     break;
+//   case 4:day = "Thursday";
+//     break;
+//   case 5:day = "Friday";
+//     break;
+//   case  6:day = "Saturday";
+// }
+// }
+// printday();
+// console.log(day)
+
+
+// display student grade
+var students =[{"id":101,"name":"Divya","per":30}, {"id":102,"name":"Santi","per":20}, {"id":103,"name":"Uha","per":25},
+               {"id":104,"name":"Lolitha","per":60}, {"id":105,"name":"Pallavi","per":70}, {"id":106,"name":"Samatha","per":80},
+               {"id":107,"name":"yesaswini","per":75}, {"id":108,"name":"nelima","per":85}, {"id":109,"name":"Karuna","per":40},
+               {"id":110,"name":"Sowji","per":33} ]
+
+for (var i=0; i < students.length; i++) {
+
+    var grade = students[i].per;
+    var names = students[i].name;
+            if (grade  >=80)  {
+                console.log(names+ " Distinction");      
+        } 
+         else if (grade  >=75){
+                        console.log(names+ ":A"); 
+        }
+        else if (grade  >= 60) {
+                        console.log(names+ ":B"); 
+        }
+        else if (grade  >= 45)  {
+                        console.log(names+ ":C"); 
+        }
+        else if(grade  >=35) {
+                        console.log(names+ ":D"); 
+        }
+            else if(grade  <=35) {
+                        console.log(names+ ":F"); 
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+       
+        
+        
+        </script>
+    </body>
+</html>
