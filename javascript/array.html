@@ -75,19 +75,19 @@
 
                ]
         var std = student.forEach(function(val){
-            // console.log(val.name);
-            // console.log(Object.keys(val))
-            // console.log(Object.values(val))
-            // if(val.id%2==0){
-            // console.log(val)
-            // }
+            console.log(val.name);
+            console.log(Object.keys(val))
+            console.log(Object.values(val))
+            if(val.id%2==0){
+            console.log(val)
+            }
            
         })
 
-        // var std = student.filter(function(val,index){
-        //     return val.id%2==0
-        // })
-        // console.log(std)
+        var std = student.filter(function(val,index){
+            return val.id%2==0
+        })
+        console.log(std)
         
    
         

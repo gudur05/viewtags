@@ -4,89 +4,89 @@
     <body>
         <script>
     // check given number is even or not
-    //     function check(){
-    //     var num = prompt()
-    //     if(num%2==0){
-    //         console.log(num + "is even")
-    //     }
-    //     else{
-    //         console.log(num + "is odd")
-    //     }
-    // }
-    // check();
+        function check(){
+        var num = prompt()
+        if(num%2==0){
+            console.log(num + "is even")
+        }
+        else{
+            console.log(num + "is odd")
+        }
+    }
+    check();
 
     // display message
     function printmsg(){
     var a = prompt()
     console.log(a)
     }
-    printmsg()
+    
 
     // write a program to print 1000 numbers on button click
-    // function printnum(){
-    //     var a = prompt()
-    //  for(a=0; a<=1000; a++){
-    //      console.log(a)
-    //  }
-    // }
+    function printnum(){
+        var a = prompt()
+     for(a=0; a<=1000; a++){
+         console.log(a)
+     }
+    }
 
 
     // W.A.F to check given number is even or not when button click
-    // function checkeven(){
-    //     var num = prompt()
-    //     if(num%2==0){
-    //         console.log(num + "is even")
-    //     }
-    //     else{
-    //         console.log(num + "is odd")
-    //     }
-    // }
+    function checkeven(){
+        var num = prompt()
+        if(num%2==0){
+            console.log(num + "is even")
+        }
+        else{
+            console.log(num + "is odd")
+        }
+    }
 
     // W.A.P to check given number is prime or not
-        // function prime(){
-        //    var n=prompt();
-        //     count=0;
-        //     for(var k=1; k<=n; k++)
-        //     {
-        //         if(n%k==0){
-        //             count++;
-        //         }
-        //     }
-        //     if(count==2){
-        //         console.log(n +"is prime number")
-        //     }
-        //     else{
-        //         console.log(n +"is not prime number")
-        //     }
-        // }
+        function prime(){
+           var n=prompt();
+            count=0;
+            for(var k=1; k<=n; k++)
+            {
+                if(n%k==0){
+                    count++;
+                }
+            }
+            if(count==2){
+                console.log(n +"is prime number")
+            }
+            else{
+                console.log(n +"is not prime number")
+            }
+        }
 
         // print even numbers upto n except 26
-        // function printevennumbrs(){
-        //     var n = prompt()
-        //     for(i=0; i<=n; i++){
-        //         if(i%2==0 && i!==26){
-        //         console.log(i)
-        //     }
-        //   }
-        // }
-        // printevennumbrs()
+        function printevennumbrs(){
+            var n = prompt()
+            for(i=0; i<=n; i++){
+                if(i%2==0 && i!==26){
+                console.log(i)
+            }
+          }
+        }
+        printevennumbrs()
 
  
     </script>
         
         <!-- display the input  -->
-      <!-- <button class="btn bg-warning text-white mx-3 my-3" onclick="printmsg()">Display</button> -->
+      <button class="btn bg-warning text-white mx-3 my-3" onclick="printmsg()">Display</button>
 
        <!-- // print 1000 numbrs button. -->
-       <!-- <button class ="btn bg-danger text-white mx-3 my-3" type ="button"  onclick ="printnum()">Numbers</button> -->
+       <button class ="btn bg-danger text-white mx-3 my-3" type ="button"  onclick ="printnum()">Numbers</button>
 
        <!-- // check even number button click -->
-       <!-- <button class="btn bg-primary text-white mx-3 my-3" onclick="checkeven()"> Even </button> -->
+       <button class="btn bg-primary text-white mx-3 my-3" onclick="checkeven()"> Even </button>
 
         <!-- check prime num or not -->
-        <!-- <button class ="btn bg-success text-white mx-3 my-3" onclick="prime()">Prime</button> -->
+        <button class ="btn bg-success text-white mx-3 my-3" onclick="prime()">Prime</button>
 
         <!-- print even numbers except 26 on mouseclick -->
-        <!-- <button class ="btn bg-success text-white mx-3 my-3" onclick="printevennumbrs()">printevennumbrs</button>  -->
+        <button class ="btn bg-success text-white mx-3 my-3" onclick="printevennumbrs()">printevennumbrs</button> 
     </body>
 </html>

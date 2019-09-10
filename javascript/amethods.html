@@ -2,157 +2,157 @@
     <body>
         <script>
             // concat Method
-            // var a=[10,20,30,40]
-            // var b=[50,60,70,80]
-            // console.log(a.concat(b))
+            var a=[10,20,30,40]
+            var b=[50,60,70,80]
+            console.log(a.concat(b))
 
             //copyWithin()
-            // var a=[1,2,3,4]
-            // console.log(a.copyWithin(2,0))
+            var a=[1,2,3,4]
+            console.log(a.copyWithin(2,0))
 
             // every()
-            // var odds=[2,3,5,7]
-            // function checkOdd(number){
-            //     return number%2!=0;
-            // }
-            // console.log(odds.every(checkOdd))
+            var odds=[2,3,5,7]
+            function checkOdd(number){
+                return number%2!=0;
+            }
+            console.log(odds.every(checkOdd))
             
             // fill()
-            // var a=[0,1,2,3,4]
-            // console.log(a.fill(10,2,5))
+            var a=[0,1,2,3,4]
+            console.log(a.fill(10,2,5))
 
             // filter()
-            // var a=[20,25,30,35,40,10,16]
-            // function checkMultiples(number){
-            //     return number%5==0
-            // }
-            // console.log(a.filter(checkMultiples))
+            var a=[20,25,30,35,40,10,16]
+            function checkMultiples(number){
+                return number%5==0
+            }
+            console.log(a.filter(checkMultiples))
 
             // find()
-            // var a=[10,20,25,35,46,50]
-            // function checkGreater(number){
-            //     return number>20;
-            // }
-            // console.log(a.find(checkGreater))
+            var a=[10,20,25,35,46,50]
+            function checkGreater(number){
+                return number>20;
+            }
+            console.log(a.find(checkGreater))
 
-            // // findIndex()
-            // var a=[1,5,9,10,15,25,50,60,80,100,99]
-            // function checkNum(number){
-            //     return number>45;
-            // }
-            // console.log(a.findIndex(checkNum))
+            // findIndex()
+            var a=[1,5,9,10,15,25,50,60,80,100,99]
+            function checkNum(number){
+                return number>45;
+            }
+            console.log(a.findIndex(checkNum))
 
             // forEach
-            //    var numbers = [10,20,30,40];
-            //    numbers.forEach(myFunction)
-            //    function myFunction(item, index, arr) {
-            //    arr[index] = item*10;
-            // }
-            //  console.log(numbers)
+               var numbers = [10,20,30,40];
+               numbers.forEach(myFunction)
+               function myFunction(item, index, arr) {
+               arr[index] = item*10;
+            }
+             console.log(numbers)
 
             // from()
-            // var a=Array.from("divya")
-            // console.log(a)
+            var a=Array.from("divya")
+            console.log(a)
 
             // includes()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // var b = a.includes("kiwi")
-            // console.log(b)
+            var a =["apple", "mango", "banana", "grapes"]
+            var b = a.includes("kiwi")
+            console.log(b)
 
             // indexOf()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // var b = a.indexOf("grapes")
-            // var c = a.indexOf("kiwi")
-            // console.log(b +"  "+ c)
+            var a =["apple", "mango", "banana", "grapes"]
+            var b = a.indexOf("grapes")
+            var c = a.indexOf("kiwi")
+            console.log(b +"  "+ c)
 
             // isArray
-            // var a =[]
-            // var b = Array.isArray(a)
-            // console.log(b)
+            var a =[]
+            var b = Array.isArray(a)
+            console.log(b)
 
             // join()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // var b = a.join()
-            // console.log(b)
+            var a =["apple", "mango", "banana", "grapes"]
+            var b = a.join()
+            console.log(b)
 
             // length()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // console.log(a.length)
+            var a =["apple", "mango", "banana", "grapes"]
+            console.log(a.length)
 
             // lastIndexOf()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // var b = a.lastIndexOf("mango")
-            // console.log(b)
+            var a =["apple", "mango", "banana", "grapes"]
+            var b = a.lastIndexOf("mango")
+            console.log(b)
 
             // map()
-            // var a =[4,9,16,25]
-            // var b = a.map(Math.sqrt)
-            // console.log(b)
+            var a =[4,9,16,25]
+            var b = a.map(Math.sqrt)
+            console.log(b)
 
             // pop()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // a.pop();
-            // console.log(a)
+            var a =["apple", "mango", "banana", "grapes"]
+            a.pop();
+            console.log(a)
 
             // push()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // a.push("kiwi", "pineapple")
-            // console.log(a)
+            var a =["apple", "mango", "banana", "grapes"]
+            a.push("kiwi", "pineapple")
+            console.log(a)
             
             // reduce()
-            // var a =[1,2,3,4]
-            // var b = a.reduce(function(val,num){
-            //     return val*num;
-            // })
-            // console.log(b)
+            var a =[1,2,3,4]
+            var b = a.reduce(function(val,num){
+                return val*num;
+            })
+            console.log(b)
 
             // reduceRight same as reduce() but it executes from right-left
 
-            // reverse()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // console.log(a.reverse())
+            reverse()
+            var a =["apple", "mango", "banana", "grapes"]
+            console.log(a.reverse())
 
             // shift()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // a.shift()
-            // console.log(a)
+            var a =["apple", "mango", "banana", "grapes"]
+            a.shift()
+            console.log(a)
 
             // slice()
-            // var a =["apple", "mango", "banana", "grapes","lemon"]
-            // console.log(a.slice(1,3))
+            var a =["apple", "mango", "banana", "grapes","lemon"]
+            console.log(a.slice(1,3))
 
             // some()
-            // var a =[10,20,30,19,8,16]
-            // var b = a.some(function(val,index){
-            //     return val%2==0
-            // })
-            // console.log(b)
+            var a =[10,20,30,19,8,16]
+            var b = a.some(function(val,index){
+                return val%2==0
+            })
+            console.log(b)
 
             // sort()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // var b=[8,9,6,4,3,1,10]
-            // // 10 returns in scnd place becuz it assumes 1 is smaller than next number so it returns as [1,10,3,4...]
-            // a.sort()
-            // b.sort()
-            // console.log(b)
+            var a =["apple", "mango", "banana", "grapes"]
+            var b=[8,9,6,4,3,1,10]
+            // 10 returns in scnd place becuz it assumes 1 is smaller than next number so it returns as [1,10,3,4...]
+            a.sort()
+            b.sort()
+            console.log(b)
 
             // splice()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // a.splice(2,0, "lemon","kiwi")
-            // console.log(a)
+            var a =["apple", "mango", "banana", "grapes"]
+            a.splice(2,0, "lemon","kiwi")
+            console.log(a)
 
             // toString()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // console.log(a.toString())
+            var a =["apple", "mango", "banana", "grapes"]
+            console.log(a.toString())
 
             // unshift()
-            //   var a =["apple", "mango", "banana", "grapes"]
-            //   a.unshift("kiwi","lemon")
-            //   console.log(a)
+              var a =["apple", "mango", "banana", "grapes"]
+              a.unshift("kiwi","lemon")
+              console.log(a)
 
             // valueOf()
-            // var a =["apple", "mango", "banana", "grapes"]
-            // console.log(a.valueOf())
+            var a =["apple", "mango", "banana", "grapes"]
+            console.log(a.valueOf())
             
         </script>
     </body>
