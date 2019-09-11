@@ -1,0 +1,46 @@
+<html>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <body>
+        <div class="container mt-4 " >
+                            <div class="card text-center">
+                                    <div class="card-header" id="main">
+                                      <h4>Student id</h4>
+                                    
+                                    </div>
+                                    <div class="card-body" id="main1" >
+                                      <h6></h6>
+                                      
+                                    </div>
+                                    <div class="card-footer text-center" id="main2">
+                                          <h5>
+                                                display id 
+                                          </h5>
+                                    </div>
+                                </div>
+                     
+                    <button class="btn btn-success d-block mt-4" onclick="getstudent()">click</button>
+        </body>
+        
+        <script>
+        function getstudent(){
+            var students =[ {"id":101, "name": "Divya", "course":"Angular"},
+                           {"id":102, "name": "santi", "course":"React"},
+                           {"id":103, "name": "uha", "course":"Angular"},
+                           {"id":104, "name": "lolitha", "course":"React"}]
+                students.forEach(function(val){
+                    var add = "<h4>"+"student id is" +val.id+ "</h4>"
+                    document.getElementById("main").innerHTML=add;
+                    var add1= "<h6>"+"student name is" +val.name+ "<h6>"
+                                    document.getElementById("main1").innerHTML=add1;
+                    var add2= "<h5>"+ "student course is" +val.course+ "<h5>"
+                                    document.getElementById("main2").innerHTML=add2;
+                
+                })
+        }
+        
+        
+        
+        
+        
+        </script>
+    </html>

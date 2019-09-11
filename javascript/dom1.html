@@ -1,0 +1,62 @@
+<html>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    <body>
+        <div class="container">
+                <button class="btn bg-success text-white d-block mt-3 mb-3" onclick="valuesadd()">ClickMe</button>
+                <table class="table table-stripped">
+              <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>name</th>
+                    <th>per</th>
+                </tr>
+             </thead>
+            <tbody id="tbodycontent">
+
+            </tbody>
+        </table>
+    
+
+    </div>
+    <script>
+    function valuesadd(){
+        var students=[
+                {"id":101,"name":"Divya","per":30},
+                {"id":102,"name":"Uha","per":20},
+                {"id":103,"name":"Santhi","per":50},
+                {"id":105,"name":"Lolitha","per":80},
+                {"id":106,"name":"Samatha","per":25},
+                {"id":107,"name":"Akhila","per":70},
+                {"id":108,"name":"Karuna","per":75},
+                {"id":109,"name":"Soujanya","per":36},
+                {"id":110,"name":"Swapna","per":35},
+                {"id":111,"name":"Neelima","per":40}
+                ]
+            students.forEach(function(val,index){
+                var trelement =
+                "<tr>" +
+                "<td>"+ val.id + "</td>"+
+                "<td>"+ val.name + "</td>"+
+                "<td>"+ val.per + "</td>"+
+                "</tr>"
+                
+                    document.getElementById("tbodycontent").innerHTML=document.getElementById("tbodycontent").innerHTML+trelement;
+                
+               
+            })
+         }
+    
+    
+    
+    </script>
+    </body>
+    <script>
+   
+    
+    
+    </script>
+</html>
