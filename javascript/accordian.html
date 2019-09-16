@@ -22,13 +22,18 @@
 
         <script>
             function accordian(){
+                document.getElementById("one").innerHTML="";
                 var std=[{"Id":101, "Name": "Divya", "MobileNum":9876543210,"Course":"Angular", "Duration":"2 Months"},
                      {"Id":102, "Name": "Lolitha", "MobileNum":9876543012,"Course":"React", "Duration":"2 Months"},
                      {"Id":103, "Name": "Santi", "MobileNum":9876543102,"Course":"Java", "Duration":"3 Months"},
                      {"Id":104, "Name": "Uha", "MobileNum":9876543201,"Course":"Testing", "Duration":"2 Months"}]
                 std.forEach(function(val){
-                    var add = "<div>"+val.Id+"<br>"+val.Name+ "<br>"+val.MobileNum+"<br>"+val.Course+"<br>"+"</div>"+"<br>"
-                         document.getElementById("one").innerHTML=document.getElementById("one").innerHTML+add;
+                    var add = "<div>"+val.Id+"<br>"+
+                        val.Name+ "<br>"+
+                        val.MobileNum+"<br>"+
+                        val.Course+"<br>"+
+                        "</div>"+"<br>"
+                         document.getElementById("one").innerHTML+=add;
    
                 })
             }

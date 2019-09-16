@@ -54,15 +54,16 @@
       </body>
       <script>
       function accordian(){
+          document.getElementById("collapseOne").innerHTML="";
                 var std=[{"Id":101, "Name": "Divya", "Course":"Angular", "Duration":"2 Months"},
                      {"Id":102, "Name": "Lolitha","Course":"React", "Duration":"2 Months"},
                      {"Id":103, "Name": "Santi","Course":"Java", "Duration":"3 Months"},
                      {"Id":104, "Name": "Uha","Course":"Testing", "Duration":"2 Months"}]
                 std.forEach(function(val){
                     var add = "<div>"+val.Id+"<br>"+val.Name+ "<br>"+val.Course+"<br>"+"</div>"+"<br>"
-                    document.getElementById("collapseOne").innerHTML=document.getElementById("collapseOne").innerHTML+add;
-                    document.getElementById("collapseTwo").innerHTML=document.getElementById("collapseOne").innerHTML+add;
-                    document.getElementById("collapseThree").innerHTML=document.getElementById("collapseOne").innerHTML+add;
+                    document.getElementById("collapseOne").innerHTML+=add;
+                    document.getElementById("collapseTwo").innerHTML+=add;
+                    document.getElementById("collapseThree").innerHTML+=add;
                     
                 })
       }
