@@ -1,0 +1,70 @@
+<html>
+  <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <body>
+            <div class ="container p-0">
+              <button class="btn bg-success text-white my-3" onclick="users()">ClickHere</button>
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>Id</th>
+                          <th>Name</th>
+                          <th>Username</th>
+                          <th>Email</th>
+                          <th>Address</th>
+                          <th>Phone</th>
+                          <th>Website</th>
+                          <th>Company</th>
+                          <th>Edit Details</th>
+                      </tr>
+                  </thead>
+                  <tbody id="user-list"></tbody>
+              </table>
+            </div>
+  
+      
+        </body>
+        
+        <script>
+            function users(){
+          var http = new XMLHttpRequest();
+          http.open("GET", "https://jsonplaceholder.typicode.com/users");
+          http.send();
+
+          http.onreadystatechange = function(){
+              if(this.readyState==4){
+                //   console.log(this.responseText);
+                  var res = JSON.parse(this.responseText)
+                  prepareList(res);
+              }
+          }
+        } 
+
+        function prepareList(users){
+            users.forEach(function(obj,index){
+            var ele = "<tr>"+
+                "<td>"+obj.id+"</td>"+
+                "<td>"+obj.name+"</td>"+
+                "<td>"+obj.username+"</td>"+
+                "<td>"+obj.email+"</td>"+
+                "<td>"+obj.address.street+","+obj.address.suite+","+obj.address.city+","+obj.address.zipcode+"</td>"+
+                "<td>"+obj.phone+"</td>"+
+                "<td>"+obj.website+"</td>"+
+                "<td>"+obj.company.name+"</td>"+
+                "<td>"+"<button class='btn bg-primary text-white' onclick='getusers("+obj.id+")'>Edit</button>"+"</td>"+
+                "</tr>"
+                document.getElementById("user-list").innerHTML+=ele;
+            })
+        }
+        function getusers(data){
+            location.href= "file:///C:/projects/viewtags/javascript/apicall2.html";
+            localStorage.setItem("id",data);
+          // console.log(data)
+        
+       
+        } 
+        
+    </script>

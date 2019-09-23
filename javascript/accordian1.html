@@ -1,0 +1,46 @@
+<html>
+  <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <div class="container">
+            <button class="btn bg-primary text-white my-4" onclick="accordian()">ClickHere</button>
+            <div class="accordion" id="accordionExample">
+            </div>
+        </div>        
+             
+            
+                    
+     </body>
+     
+     <script>
+     function accordian(){  
+         document.getElementById("accordionExample").innerHTML=""
+        var students =[ {"id":101, "name": "Divya", "course":"Angular"},
+                        {"id":102, "name": "santi", "course":"React"},
+                        {"id":103, "name": "uha", "course":"Angular"},
+                        {"id":104, "name": "lolitha", "course":"React"}]
+            students.forEach(function(val){
+                var std='<div class="card">'+
+                      '<div class="card-header" id="headingOne">'+
+                        '<h2 class="mb-0">'+
+                          '<a class="btn btn-link"  type="button" data-toggle="collapse" data-target="#collapseOne '+val.id+'" aria-expanded="true" aria-controls="collapseOne">'+
+                            'Collapsible Group Item #1'+
+                          '</a>'+
+                        '</h2>'+
+                      '</div>'+
+                  
+                      '<div id="collapseOne '+val.id+'" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">'+
+                        '<div class="card-body">'+
+                          val.id +"<br>" +val.name+"<br>"+val.course+
+                        '</div>'+
+                      '</div>';
+                document.getElementById("accordionExample").innerHTML+=std;  
+            })               
+        }
+          
+         
+    </script>

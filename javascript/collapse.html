@@ -62,8 +62,8 @@
                 std.forEach(function(val){
                     var add = "<div>"+val.Id+"<br>"+val.Name+ "<br>"+val.Course+"<br>"+"</div>"+"<br>"
                     document.getElementById("collapseOne").innerHTML+=add;
-                    document.getElementById("collapseTwo").innerHTML+=add;
-                    document.getElementById("collapseThree").innerHTML+=add;
+                    document.getElementById("collapseTwo").innerHTML=document.getElementById("collapseOne").innerHTML+add;
+                    document.getElementById("collapseThree").innerHTML=document.getElementById("collapseOne").innerHTML+add;
                     
                 })
       }
