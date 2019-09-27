@@ -5,24 +5,73 @@
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
- <div class="container">
-        <div class="form-group">
-                <label class="form-label">id:</label>
-                <input  id="id" type="number" value="" class="form-control"/>
-        </div>
-        <div class="form-group">
-                <label class="form-label">name:</label>
-                <input  id="name" type="text" value="" class="form-control"/>
-        </div>
-    <button class="btn btn-primary" id="click">Clickhere</button>
+<style>
+img{
+   float:right;
+}
+.card-header{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+</style>
+ <div class="container my-5 d-flex justify-content-center h-50">
+     <div class="card w-75 ">
+         <div class="card-header text-center bg-danger text-white font-weight-bolder ">STUDENT LOGIN FORM
+             <img src="vbm.jpg" width="200" height="50" />
+         </div>
+         <div class="card-body">
+                <div class="form-group">
+                        <label class="form-label">UserName</label>
+                        <input  id="username" type="text" value="" class="form-control "/>
+                </div>
+                <div class="form-group">
+                        <label class="form-label">Password:</label>
+                        <input  id="pswd" type="password" value="" class="form-control"/>
+                </div>
+               <button class="btn btn-primary" id="signupbtn">SignUp</button>
+               <button class="btn btn-success" id="signinbtn">SignIn</button>
+         </div>
+         </div>
  </div>
+        
 
  <script>
-     $("#click").click(function(){
-        $(location).attr("href","file:///C:/projects/viewtags/jQuery/table.html")
+     $("#signupbtn").click(function(){
+        $(location).attr("href","file:///C:/projects/viewtags/jQuery/signup.html")
      })
 
+ $("#signinbtn").click(function(){
+    var userName = $("#username").val();
+    var Password = $("#pswd").val();
+           if (userName == '' && Password=='' )
+           {
+               alert('Input Fields are empty');
+           }
+           else if(userName=='')
+           {
+               alert('username is empty');
+           }
+           else if(Password=='')
+           {
+               alert('Password is empty');
+           }
+           else if(userName!='' && Password!='')
+           {
+               alert("Successfully LoggedIn")
+           }
+   
+ })
  
- 
+
+
+// var user =$("#username").val()
+// var pswd=$("#password").val();
+// if(user =='divya' &&  pswd == '1234')
+//     {
+//         alert("success");
+//     }
+//     else{
+//         alert("fail");
+//     }
+// })
  </script>
